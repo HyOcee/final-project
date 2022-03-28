@@ -1,0 +1,234 @@
+.logo {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+header {
+    padding: 2% 7.5%;
+    position: relative;
+    min-height: 500px;
+    height: 100vmin;
+}
+
+header h1 {font-size: 48px;}
+
+header button {
+    padding: 16px 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    min-width: 400px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+#show-button, #hide-button {display: none;}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.home-nav ul li a:hover {
+    color: rgba(64, 163, 248, 1);
+}
+
+.home-text {
+    position: absolute;
+    width: 35%;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.header_img {
+    position: absolute;
+    right: 3%;
+    bottom: 0;
+    height: 80%;
+}
+
+.home-text .m-btm {
+    margin-bottom: 22px;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+    padding: 18px;
+}
+
+.fit-content {
+    width: fit-content !important;
+}
+
+button:focus, button:hover {
+    outline: 2px solid rgb(213, 237, 243);
+}
+
+input, textarea {
+    padding: 20px;
+    border-radius: 5px;
+    border: rgba(225, 226, 228, 1) 1px solid;
+}
+
+input:not(:last-child), textarea:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+input:focus, textarea:focus {
+    outline: rgba(64, 163, 248, 1) 1px solid;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media only screen and (max-width: 1320px) {
+    header h1 {font-size: 30px;}
+}
+
+@media only screen and (max-width: 1024px) {
+    header button {
+        padding: 16px 18px;
+    }
+
+    input, button {
+        padding: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    header {
+        padding: 5%;
+        height: 100vh;
+    }
+
+    header, nav ul {
+        min-height: 400px;
+    }
+
+    header h1 {font-size: 26px;}
+
+    nav ul {
+        display: block;
+        padding: 5% 0;
+        width: 130px;
+        min-width: unset;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        transition: 0.7s;
+        background-color: rgba(255, 255, 255, 0.88);
+        height: 100vh;
+    }
+
+    .bl-bg-im::after {
+        background-color: rgb(91, 172, 243) !important;
+    }
+
+    nav ul::after {
+        content: "";
+        background-color: rgba(255, 255, 255, 0.88);
+        opacity: 1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+      }
+
+    #show-button, #hide-button {display: block; font-size: 20px !important;}
+
+    nav ul li {
+        padding: 10px;
+        margin: 1% 0;
+    }
+
+    nav ul li:first-child {
+        padding: 0 10px;
+        margin: 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    nav ul button.lt-bl-bg, 
+    nav ul button.wh-bg {
+        padding: 10px;
+        background-color: inherit;
+        color: inherit;
+    }
+
+    .home-text {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .header_img {
+        opacity: 0.3;
+        right: 0;
+    }
+
+    
+    input, button {
+        padding: 12px;
+    }
+    .logo {font-size: 24px;}
+}
+
+@media only screen and (max-width: 650px){
+    .footer-t .md > div:not(:first-child) {
+        margin: 0 10px 10px;
+    }
+
+    .col-2-3s {
+        width: 80%;
+        max-width: 350px;
+    }
+
+    .contact-text h1 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    body {
+        min-width: 280px;
+    }
+
+    .d-flex {
+        display: none;
+    }
+
+    button {
+        padding: 8px !important;
+    }
+
+    .footer-b-child {
+        display: none;
+    }
+
+    header h1, .contact-text h1 {font-size: 20px;}
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Management System</title>
+    <link rel="stylesheet" href="css/styles_0.css">
+    <link rel="stylesheet" href="css/styles_home.css">
+</head>
+<body>
+    <header class="lt-bl-bg-2">
+        <nav class="home-nav">
+            <div routerLink="/" class="logo lt-bl">HEALTCARE.</div>
+    
+            <ul #navUl>
+                <li id="hide-button" (click)="navHide(navUl)"><i class="fa fa-times lt-bl"></i></li>
+                <li class="lt-bl"><a routerLink="/">Home</a></li>
+                <li><a routerLink="">About</a></li>
+                <li><a routerLink="">Services</a></li>
+                <li><a routerLink="/contact-us">Contact</a></li>
+                <a routerLink="/dashboard"><button class="lt-bl-bg wh">Get Started </button></a>
+            </ul>
+    
+            <li id="show-button" (click)="navShow(navUl)"><i class="fa fa-bars"></i></li>
+        </nav>
+
+        <div class="container">
+            <div class="col-2 home-text">
+                <h1 class="m-btm">Find And Search Your <br> <span class="lt-bl"><h1>Suitable Doctor's</h1></span></h1>
+    
+                <p class="m-btm bl-sm">Join us and take care of yourself and your family with health services that will make you feel confident and safe in your daily life.</p>
+        
+                <button class="lt-bl-bg wh">Book Appointment &nbsp; <i class="fa fa-arrow-right"></i></button>
+            </div>
+
+            <form action="">
+                <input type="text" placeholder="Username">
+                <input type="email" placeholder="Password">
+                <input type="checkbox" id="rememberMe"><label for="checkBox">Remember me</label>
+            </form>
+        </div>
+    </header>
+
+<script src="https://kit.fontawesome.com/aedd297eaa.js" crossorigin="anonymous"></script>
+</body>
+</html>
