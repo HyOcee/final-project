@@ -9,36 +9,50 @@
     <link rel="stylesheet" href="css/styles_home.css">
 </head>
 <body>
-    <header class="lt-bl-bg-2">
-        <nav class="home-nav">
-            <div routerLink="/" class="logo lt-bl">HEALTCARE.</div>
-    
-            <ul #navUl>
-                <li id="hide-button" (click)="navHide(navUl)"><i class="fa fa-times lt-bl"></i></li>
-                <li class="lt-bl"><a routerLink="/">Home</a></li>
-                <li><a routerLink="">About</a></li>
-                <li><a routerLink="">Services</a></li>
-                <li><a routerLink="/contact-us">Contact</a></li>
-                <a routerLink="/dashboard"><button class="lt-bl-bg wh">Get Started </button></a>
-            </ul>
-    
-            <li id="show-button" (click)="navShow(navUl)"><i class="fa fa-bars"></i></li>
-        </nav>
+    <header class="drk-bg lt-bl">
+        <div routerLink="/" class="logo lt-bl">RMS</div>
 
-        <div class="container">
+        <div class="container home-cont">
             <div class="col-2 home-text">
                 <h1 class="m-btm">Find And Search Your <br> <span class="lt-bl"><h1>Suitable Doctor's</h1></span></h1>
     
                 <p class="m-btm bl-sm">Join us and take care of yourself and your family with health services that will make you feel confident and safe in your daily life.</p>
-        
-                <button class="lt-bl-bg wh">Book Appointment &nbsp; <i class="fa fa-arrow-right"></i></button>
+
+                <div>Need help? <a href="contact_us.html">Contact us</a></div>
             </div>
 
-            <form action="">
+            <!-- <form action="" class="col-2">
                 <input type="text" placeholder="Username">
                 <input type="email" placeholder="Password">
-                <input type="checkbox" id="rememberMe"><label for="checkBox">Remember me</label>
-            </form>
+                <div>
+                    <input type="checkbox" id="rememberMe">&emsp;<label for="checkBox">Remember me</label>
+                </div>
+                <button>Sign in</button>
+                <div>Don't have an account yet? <span class="anchor-like">Sign Up</span></div>
+            </form> -->
+
+            <div class="col-2 form-div drk">
+                <h1 class="m-btm">Sign Up</h1>
+                <form action="">
+                    <div>
+                        <input type="radio" name="registration_type" id="admin" value="admin"> &emsp;
+                        <label for="admin">Admin</label> &emsp;
+    
+                        <input type="radio" name="registration_type" id="teacher" value="teacher"> &emsp;
+                        <label for="teacher">Teacher</label> &emsp;
+    
+                        <input type="radio" name="registration_type" id="student" value="student"> &emsp;
+                        <label for="student">Student</label> &emsp;
+                    </div>
+    
+                    <input type="text" placeholder="Full name">
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Password">
+                    
+                    <button class="drk-bg lt-bl">Sign Up</button>
+                    <div>Have an account? <span class="anchor-like">Login</span></div>
+                </form>
+            </div>
         </div>
     </header>
 
