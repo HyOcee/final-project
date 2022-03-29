@@ -16,6 +16,10 @@ header button {
 }
 
 .home-cont {
+    position: absolute;
+    top: 60%;
+    width: 85%;
+    transform: translateY(-50%);
     align-items: center;
 }
 
@@ -90,8 +94,13 @@ form {
 @media only screen and (max-width: 850px) {
     header {
         padding: 5%;
-        height: 100vh;
-        min-height: fit-content;
+        min-height: 100vh;
+    }
+
+    .home-cont {
+        position: relative;
+        transform: unset;
+        width: auto;
     }
 
     header h1 {font-size: 26px;}
