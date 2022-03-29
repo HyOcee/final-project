@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bdgblu ht font2 wt5 clw posfix">
+        <i class="fa fa-bars"></i>
+        <div class="pdtp2">
+            <div id="dash"><a href="#" target="_blank" class="flex1 pd4"><img src="imageD/bx_bxs-dashboard.svg"><span
+                        class="mrglef dis">Dashboard</span></a></div>
+            <div><a href="#" target="_blank" class="flex1 pd4"><img src="imageD/3. ideas.png"><span
+                        class="mrglef dis">Central IS</span></a></div>
+            <div><a href="schedule.html" target="_blank" class="flex1 pd4"><img src="imageD/schedule.svg"><span
+                        class="mrglef dis">School Manager</span></a></div>
+            <div><a href="#" target="_blank" class="flex1 pd4"><img src="imageD/patient.svg"><span class="mrglef dis">
+                        User Manager</span></a></div>
+            <div><a href="result.html" target="_blank" class="flex1 pd4"><img src="imageD/notes.svg"><span
+                        class="mrglef dis">Result</span></a></div>
+        </div>
+    </div>
+    <div class="posstic mrgleff bx-shw ht2 bgwht">
+        <div class="mrg-lef pdtb">
+            <img src="imageD/Shape.svg">
+            <img src="imageD/Ellipse 2.svg">
+        </div>
+    </div>
+    <div class="mrgleff mrgtp1 btm txtalg pd1">
+        <h4>Dashboard</h4>
+    </div>
+    <div class="mrgleft mrgtp1 pd1">
+        <h5>School Code</h5>
+        <h6>23456</h6>
+    </div>
+    <div class="grid pd3 mrgleff">
+        <div>
+            <div class="card pd2">
+                <div>
+                    <h4>Teachers Quick Link</h4>
+                </div>
+                <div class="card mrgtp pd2">
+                    <div class="flex1">
+                        <i class="fa fa-id-badge"></i>
+                        <h5>Subject Teacher Role</h5>
+                    </div>
+                    <div class="flex mrgtp">
+                        <div class="bdgblu pd2 bdrad">
+                            <h5>Upload Score</h5>
+                        </div>
+                        <div class="bdgblu pd2 bdrad">
+                            <h5>Upload Score</h5>
+                        </div>
+                        <div class="bdgblu pd2 bdrad mrgtp">
+                            <h5>Upload Score</h5>
+                        </div>
+                        <div class="bdgblu pd2 bdrad mrgtp">
+                            <h5>Upload Score</h5>
+                        </div>
+                    </div>
+                    <div class="bdgblu mrgtp bdrad pd2">
+                        <h5>Upload Score</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="card mrgtp pd2">
+                <div>
+                    <h4>STUDENT EMROLLEMENT ANALYSIS (YEAR/TERM)</h4>
+                </div>
+                <div class="card mrgtp">
+                    <div class="chart">
+                        <!-- <h5>CHART</h5> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card pd2">
+                <div>
+                    <h4>SUBJECT REGISTRATION (YEAR/TERM)</h4>
+                </div>
+                <div class="card mrgtp">
+                    <table>
+                        <thead>
+                            <th>Class Arm</th>
+                            <th>Subject</th>
+                            <th>Reg Students </th>
+                        </thead>
+                        <tr>
+                            <td>Senior Secondary School, Science Class</td>
+                            <td>Chemistry</td>
+                            <td>56</td>
+                        </tr>
+                        <tr>
+                            <td>Senior Secondary School, Science Class</td>
+                            <td>Chemistry</td>
+                            <td>56</td>
+                        </tr>
+                        <tr>
+                            <td>Senior Secondary School, Science Class</td>
+                            <td>Chemistry</td>
+                            <td>56</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card pd2 mrgtp">
+                <div>
+                    <h4>Analysis Logs</h4>
+                </div>
+                <div class="card mrgtp pd2">
+                    <div>
+                        <h5>Subject Teacher Role</h5>
+                    </div>
+                    <div>
+                        <h5>Upload Score</h5>
+                    </div>
+                    <div>
+                        <h5>Upload Score</h5>
+                    </div>
+                    <div>
+                        <h5>Upload Score</h5>
+                    </div>
+                    <div>
+                        <h5>Upload Score</h5>
+                    </div>
+                    <div>
+                        <h5>Upload Score</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="https://kit.fontawesome.com/aedd297eaa.js"crossorigin='anonymous'></script>
+    <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
+    <script>
+        let data = {
+            header: ['Class', 'Frequency'],
+            column: [
+                SS1= {
+                male:700,
+                female: 650
+             },
+             SS2 = {
+                male:500,
+                female: 300
+             },
+             SS3 = {
+                male:300,
+                female: 450
+             },
+            ]
+        }
+    </script>
+</body>
+
+</html>
