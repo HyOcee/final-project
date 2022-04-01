@@ -178,7 +178,7 @@ body{
     background-color: #2bac52;
 }
 
-div>a:hover{
+a:hover{
     background-color:#2bac52;
 }
 
@@ -189,6 +189,10 @@ a{
 
 .posfix{
     position:fixed;
+}
+
+.over{
+    overflow-y: auto;
 }
 
 .posstic{
@@ -234,12 +238,6 @@ a{
     justify-content: flex-end;
     align-items: center;
 }
-
-/* .flex3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 table {
     border-collapse: collapse;
