@@ -1,0 +1,114 @@
+html {
+    font-size: 10px;
+}
+
+.t-a-right {
+    text-align: right;
+}
+
+.form-table-scroll {
+    overflow-x: auto;
+}
+
+tr:nth-child(even) {
+    background-color: unset;
+}
+
+.pd-l-t {
+    padding: 5% 7% 0;
+}
+
+.pd-sm {
+    padding: 3%;
+}
+
+.title-dashboard {
+    padding: 10px;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, 
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.profile-pic, .profile-card {
+    display: flex;
+    gap: 2rem;
+}
+
+.profile-pic {
+    align-items: center;
+}
+
+.profile-pic img {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    border: 2px solid gainsboro;
+}
+
+.profile-pic h3 {
+    font-size: 2.3rem;
+}
+
+.profile-pic p {
+    font-size: 1.4rem;
+}
+
+.profile-details-cont,
+.personnel-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.personnel-container {
+    justify-content: space-between;
+}
+
+.profile-details-cont > div {
+    width: 45%;
+}
+
+.profile-details-cont > div:not(:last-child) {
+    margin-right: 3%;
+}
+
+.profile-details-cont > div > div{
+    /* width: 47.5%; */
+}
+
+.profile-details-cont h3 {
+    font-size: 2rem;
+}
+
+.profile-details-cont p,
+.profile-card p {
+    font-size: 14px;
+}
+
+.profile-details-card {
+    padding: 3%;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, 
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.profile-card {
+    cursor: pointer;
+    width: 47.5%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, 
+          rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 1.5%;
+    margin: 1rem 0;
+}
+
+.profile-card h4 {
+    font-size: 16px;
+}
+
+.profile-card img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}

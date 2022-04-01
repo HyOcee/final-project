@@ -1,0 +1,16 @@
+
+<div class="moveX form-div drk">
+    <h1 class="m-btm">School Registration</h1>
+    <form [formGroup]="RegistrationData" (ngSubmit)="registerSchool($event)">
+        <div class="lg-inputs-div">
+            <input formControlName="nameOfSchool" type="text" placeholder="Name of School">
+            <input formControlName="username" type="text" placeholder="School ID">
+        </div>
+        <div class="lg-inputs-div">
+            <input type="text" placeholder="email">
+            <input formControlName="password" type="password" placeholder="Password">
+        </div>        
+        <button class="drk-bg lt-bl">Register</button>
+        <div class="c-pointer">Have an account? <span routerLink="/" class="anchor-like">Login</span></div>
+    </form>
+</div>

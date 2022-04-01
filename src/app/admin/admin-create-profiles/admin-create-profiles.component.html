@@ -1,0 +1,49 @@
+<div class="posstic bx-shw bgwht z-index-5">
+    <div class="flex2 mrg-rgt pad2 font1">
+        <div class="cir1"><i class="fa fa-user"></i></div>
+        <h5 class="pad-left pad-rgt">IYANG UKEME</h5>
+        <button routerLink="/" class="btn bdgblu">LOG OUT</button>
+    </div>
+</div>
+
+<div class="pd-l-t">
+    <form  [formGroup]="registerTeacherForm" class="form-table-scroll">
+        <table>
+            <caption>Register Teachers</caption>
+            <thead>
+                <tr>
+                    <th>S/N</th>
+                    <th>Name of Teacher</th>
+                    <th>E-mail</th>
+                    <th>Contact Details</th>
+                    <th>Subject(s)</th>
+                    <th>Class</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+
+            <tbody #tBody>
+                <tr formGroupName="teacher1">
+                    <td>1</td>
+                    <td><input type="text" formControlName="teacherName" placeholder="e.g Ogbonna Divine"></td>
+                    <td><input type="text" placeholder="divine@sbsc.com"></td>
+                    <td><input type="text" placeholder="0800 000 0000"></td>
+                    <td>
+                        <select name="subjects" id="">
+                            <option *ngFor="let subject of allSubjects">{{subject}}</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="class">
+                            <option *ngFor="let class of classes">{{class}}</option>
+                        </select>
+                    </td>
+                    <td><input type="text" placeholder="Ikorodu"></td>
+                </tr>               
+            </tbody>
+        </table>
+
+        <button (click)="addNew($event, tBody)">Add New +</button>
+        <button (click)="registerTeachers($event)">Register</button>
+    </form>
+</div>
