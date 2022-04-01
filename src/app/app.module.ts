@@ -20,6 +20,7 @@ import { AdminOverviewComponent } from './admin/admin-overview/admin-overview.co
 import { AdminProfileComponent } from './admin/admin-profile/admin-profile.component';
 import { AdminCreateProfilesComponent } from './admin/admin-create-profiles/admin-create-profiles.component';
 import { ReportCardComponent } from './student/report-card/report-card.component';
+import { CreateStudentComponent } from './admin/create-student/create-student.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ReportCardComponent } from './student/report-card/report-card.component
     AdminOverviewComponent,
     AdminProfileComponent,
     AdminCreateProfilesComponent,
-    ReportCardComponent
+    ReportCardComponent,
+    CreateStudentComponent
   ],
   imports: [
     BrowserModule,

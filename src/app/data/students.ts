@@ -117,13 +117,22 @@ export let students = {
             name: 'Babatunde Joshua',
             subjectsOfferred: [
                 {
-                    subject: 'mathematics', testScore: 10, examScore: 8
+                    subject: 'mathematics', testScore: 2, examScore: 58
                 },
                 {
                     subject: 'physics', testScore: 0, examScore: 56
                 },
                 {
-                    subject: 'biology', testScore: 13, examScore: 44
+                    subject: 'biology', testScore: 3, examScore: 4
+                },
+                {
+                    subject: 'chemistry', testScore: 2, examScore: 58
+                },
+                {
+                    subject: 'tecchnical drawing', testScore: 0, examScore: 56
+                },
+                {
+                    subject: 'yoruba', testScore: 3, examScore: 4
                 }
             ]
         }
