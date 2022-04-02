@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { students } from '../data/students';
+import { teachers } from '../data/teachers';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +12,8 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    if(!sessionStorage.getItem('students')) sessionStorage.setItem('students',JSON.stringify(students))
+    if(!sessionStorage.getItem('teachers')) sessionStorage.setItem('teachers',JSON.stringify(teachers))
   }
 
 }

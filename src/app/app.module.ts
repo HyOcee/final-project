@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { GetRouteParams } from './services/getRouteParams';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -21,6 +23,8 @@ import { AdminProfileComponent } from './admin/admin-profile/admin-profile.compo
 import { AdminCreateProfilesComponent } from './admin/admin-create-profiles/admin-create-profiles.component';
 import { ReportCardComponent } from './student/report-card/report-card.component';
 import { CreateStudentComponent } from './admin/create-student/create-student.component';
+import { ManageTeachersComponent } from './admin/manage-teachers/manage-teachers.component';
+import { ManageStudentsComponent } from './admin/manage-students/manage-students.component';
 
 @NgModule({
   declarations: [
@@ -41,14 +45,16 @@ import { CreateStudentComponent } from './admin/create-student/create-student.co
     AdminProfileComponent,
     AdminCreateProfilesComponent,
     ReportCardComponent,
-    CreateStudentComponent
+    CreateStudentComponent,
+    ManageTeachersComponent,
+    ManageStudentsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [GetRouteParams],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

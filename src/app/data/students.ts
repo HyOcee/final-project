@@ -3,6 +3,9 @@ export interface Indexable {
 }
 
 export let students = {
+    js1: [],
+    js2: [],
+    js3: [],
     ss1:   [
         {
             username: 'Divine', age: 14, bio: 'Lorem is a shhitty stuff',
@@ -136,5 +139,6 @@ export let students = {
                 }
             ]
         }
-    ]
+    ],
+    ss3: []
 }

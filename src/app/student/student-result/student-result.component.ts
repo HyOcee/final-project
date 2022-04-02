@@ -13,15 +13,17 @@ import { getStudentInfo} from 'src/app/data/get-data';
 
 export class StudentResultComponent implements OnInit {
   public studentInfo: any
+  public studentName: any
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe((params: ParamMap) => {
-      let studentNameData = params.get('username')
-      this.studentInfo = getStudentInfo(studentNameData)
+    this.route.queryParams.subscribe(params => {
+      this.studentName = params['username']
     })
-    console.log(this.studentInfo.subjectsOfferred)
+    this.studentInfo = getStudentInfo(this.studentName)
+    for(let subjecct of this.studentInfo.subjectsOfferred){
+      console.log(subjecct)
+    }
   }
-
 }

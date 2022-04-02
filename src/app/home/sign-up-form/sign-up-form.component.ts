@@ -21,8 +21,8 @@ export class SignUpFormComponent implements OnInit {
 
   registerSchool(event: any){
     event.preventDefault()
-    console.log(this.RegistrationData.value)
-    this.router.navigate(['/admin',this.RegistrationData.value.username, ''])
+    if (!this.RegistrationData.value.username) this.RegistrationData.value.username = 'rochester'
+    this.router.navigate(['admin',this.RegistrationData.value.username])
   }
 
   constructor(private router: Router) { }

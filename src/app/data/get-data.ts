@@ -1,6 +1,8 @@
-import { students, Indexable } from "./students"
+import { Indexable } from "./students"
 
 export const getStudentInfo = (nameToFind: any)=> {
+    let students: any
+    students = JSON.parse(sessionStorage.getItem('students')!)
     let studentFound
     for (let klass in students) {
         (students as Indexable)[klass].forEach((student: any) => {

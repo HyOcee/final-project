@@ -17,6 +17,8 @@ import { AdminProfileComponent } from './admin/admin-profile/admin-profile.compo
 import { AdminCreateProfilesComponent } from './admin/admin-create-profiles/admin-create-profiles.component';
 import { ReportCardComponent } from './student/report-card/report-card.component';
 import { CreateStudentComponent } from './admin/create-student/create-student.component';
+import { ManageTeachersComponent } from './admin/manage-teachers/manage-teachers.component';
+import { ManageStudentsComponent } from './admin/manage-students/manage-students.component';
 
 const routes: Routes = [
   {
@@ -33,17 +35,19 @@ const routes: Routes = [
         {path: '', component: AdminOverviewComponent},
         {path: 'create-profile', component: AdminCreateProfilesComponent},
         {path: 'register-student', component: CreateStudentComponent},
+        {path: 'teachers', component: ManageTeachersComponent},
+        {path: 'students', component: ManageStudentsComponent},
         {path: 'profile', component: AdminProfileComponent}
       ]
   },
-  {path: 'teacher/:username', component: TeacherComponent,
+  {path: 'teacher', component: TeacherComponent,
       children: [
         {path: '', component: ClassroomComponent},
         {path: 'upload-results', component: UploadResultsComponent},
         {path: 'profile', component: TeacherProfileComponent}
       ]
   },
-  {path: 'student/:username', component: StudentComponent,
+  {path: 'student', component: StudentComponent,
     children: [
       {path: '', component: StudentResultComponent},
       {path: 'profile', component: StudentProfileComponent},

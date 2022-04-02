@@ -1,23 +1,13 @@
 <div class="posstic bx-shw bgwht z-index-5">
     <div class="flex2 mrg-rgt pad2 font1">
         <div class="cir1"><i class="fa fa-user"></i></div>
-        <h5 class="pad-left pad-rgt">IYANG UKEME</h5>
+        <h5 class="pad-left pad-rgt">{{studentInfo.name}}</h5>
         <button routerLink="/" class="btn bdgblu">LOG OUT</button>
     </div>
 </div>
 
-<div class="txt-alg pad1">
-    <h4 class="font1">Result</h4> 
-    <p class="fonts">View class Student and their results</p>
-</div>
-<div class="mrg-left1 bx-shw pad1 font1 mrg-rgt">
-    <h5>School Code</h5>
-    <h6>23456</h6>
-</div>
-<div class="card mrg-rgt mrg-top pad1">
-    <div class="txt-alg font1">
-        <h4>Student CA Report</h4>
-    </div>
+
+<div class="cards mrg-rgt mrg-top pad1">
     <div class="card mrg-top1 pad1">
         <div class="font1 txt-alg">
             <div class="clrblu">
@@ -28,7 +18,7 @@
         </div>
         <div class="pad-top font1">
            <div><p>Name of Student: <span class="fontwht">{{studentInfo.name}}</span></p></div>
-           <div><p>Student Class: <span class="fontwht">{{studentInfo.class}}</span></p></div>
+           <div><p>Student Class: <span class="fontwht">{{studentInfo.class | uppercase}}</span></p></div>
            <div><p>Student ID: <span class="fontwht">{{studentInfo.studentID ? studentInfo.studentID : '1247'}}</span></p></div>
             <table class="mrg-top">
                 <tr>
@@ -41,17 +31,17 @@
                     <th>Grade</th>
                 </tr>
                 
-                <tr *ngFor="let subjectData of studentInfo.subjectsOfferred">
-                    <td>4</td>
+                <tr *ngFor="let subjectData of studentInfo.subjectsOfferred;  index as i">
+                    <td>{{i + 1}}</td>
                     <td>{{subjectData.subject | uppercase}}</td>
                     <td>{{subjectData.testScore}}</td>
                     <td>{{subjectData.examScore}}</td>
                     <td>{{subjectData.testScore + subjectData.examScore}}</td>
-                    <td>{{subjectData.testScore + subjectData.examScore}}</td>
-                    <td>B</td>
+                    <td>{{subjectData.testScore + subjectData.examScore}}%</td>
+                    <td>{{subjectData.testScore + subjectData.examScore >= 70? 'A' : subjectData.testScore + subjectData.examScore >= 60? 'B': subjectData.testScore + subjectData.examScore >= 50? 'C': subjectData.testScore + subjectData.examScore >= 40? 'D' : 'F'}}</td>
                 </tr>
             </table>
-            <button class="mrg-left1 btn bdgblu mrg-top1"><i class="fa fa-print"></i><span class="mrg-left3">Print C.A Result</span></button>
+            <button class="mrg-left1 btn bdgblu mrg-top1"><i class="fa fa-print"></i><span class="mrg-left3">Print Result</span></button>
         </div>
     </div>
 </div>

@@ -1,27 +1,24 @@
 <div class="posstic bx-shw bgwht z-index-5">
     <div class="flex2 mrg-rgt pad2 font1">
         <div class="cir1"><i class="fa fa-user"></i></div>
-        <h5 class="pad-left pad-rgt">{{teacherInfo.name}}</h5>
+        <h5 class="pad-left pad-rgt">IYANG UKEME</h5>
         <button routerLink="/" class="btn bdgblu">LOG OUT</button>
     </div>
 </div>
 
 <div class="pd-sm">
     <div class="title-dashboard">
-        Total Number of Students: {{totalStudents}}
-    </div>
-
-    <div>
-        <button *ngFor="let subject of teacherInfo.subjects" (click)="displayStudents(subject)">{{subject}}</button>
+        Total Number of Students: {{total}}
     </div>
 
     <div class="personnel-container">
-        <div *ngFor="let student of myStudents" class="profile-card">
+        
+        <div *ngFor="let student of allStudents" class="profile-card">
             <img src="https://as.ftcdn.net/v1/pics/home/discover_collections/21Dec/924593da48aef37cb4829a43ef97175476ccbc89.photos.webp" alt="">
             <div>
                 <h4>Name: {{student.name}}</h4>
-                <p>Age: {{student.age}}</p>
-                <p>Subjects: <span *ngFor="let subject of student.subjectsOfferred">{{subject.subject}} </span> </p>
+                <p>Age: {{student.age? student.age: 9}}</p>
+                <p>Bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis.</p>
             </div>
 
             <i class="fas fa-qrcode"></i>

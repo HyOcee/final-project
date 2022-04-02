@@ -1,32 +1,33 @@
 <div class="posstic bx-shw bgwht z-index-5">
     <div class="flex2 mrg-rgt pad2 font1">
         <div class="cir1"><i class="fa fa-user"></i></div>
-        <h5 class="pad-left pad-rgt">IYANG UKEME</h5>
+        <h5 class="pad-left pad-rgt">{{teacherInfo.name}}</h5>
         <button routerLink="/" class="btn bdgblu">LOG OUT</button>
     </div>
 </div>
 
 <div class="pd-sm">
-    <form action="" [formGroup]="uploadResultsForm">
+    <div>
+        <button *ngFor="let subject of teacherInfo.subjects" (click)="displayStudents(subject)">{{subject}}</button>
+    </div>
+    <form>
         <table>
-            <caption>Physics Results</caption>
+            <caption>{{currentSubject | uppercase}} RESULTS</caption>
             <thead>
                 <tr>
                     <th>S/N</th>
                     <th>Names of Students</th>
                     <th>Test Scores</th>
                     <th>Examination Scores</th>
-                    <th>Total</th>
                 </tr>
             </thead>
 
             <tbody>
-                <tr formGroupName *ngFor="let student of students.ss1">
-                    <td>1</td>
-                    <td>{{student.name}} <input type="hidden" value="{{student.name}}"></td>
-                    <td><input type="number" value="0" min="1" max="30"></td>
-                    <td><input type="number" value="0" min="1" max="70"></td>
-                    <td>26</td>
+                <tr *ngFor="let student of myStudents; index as i" >
+                    <td>{{i+1}}</td>
+                    <td> {{student.name}}<input type="hidden" [value]="student.name"></td>
+                    <td><input type="number" [id]="student.username+'test'"  min="1" max="30"></td>
+                    <td><input type="number" [id]="student.username+'exam'"  min="1" max="70"></td>
                 </tr>
             </tbody>
         </table>

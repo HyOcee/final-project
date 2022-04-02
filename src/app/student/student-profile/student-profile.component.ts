@@ -12,15 +12,15 @@ import { getStudentInfo} from 'src/app/data/get-data';
 })
 export class StudentProfileComponent implements OnInit {
   public studentInfo: any
+  public studentName: any
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe((params: ParamMap) => {
-      let studentNameData = params.get('username')
-      console.log(studentNameData)
-      this.studentInfo = getStudentInfo(studentNameData)
+    this.route.queryParams.subscribe(params => {
+      this.studentName = params['username']
     })
+    this.studentInfo = getStudentInfo(this.studentName)
   }
 
 }
