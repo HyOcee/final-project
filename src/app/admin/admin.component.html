@@ -1,6 +1,5 @@
 <div class="bdgblu ht fonts wid-17 posfix scroll-y">
     <i class="fa fa-bars"></i>
-    <i class="fa fa-angle-down"></i>
     <div class="pad-top pad-bottom">
         <div>
             <a routerLink="./" class="flex1 pad-left pad-btm  pad-top1">
@@ -8,77 +7,68 @@
                 <span class="dis">Dashboard</span>
             </a>
         </div>
-        <div>
+        <div class="dropdown">
             <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-school"></i>
-                <span class="mrglef dis">School Manager</span>
-                <i class="fa fa-angle-right"></i>
+                <span>School Manager</span>
+                <i class="fa fa-angle-down"></i>
             </a>
+            <div class="dropdown-content">
+                <a routerLink="create-profile" class="flex1 pad-left pad-btm pad-top1">
+                    <i class="fas fa-stream"></i>
+                    <span class="mrg-lef">Teacher Registration</span>
+                </a>
+                <a routerLink="register-student" class="flex1 pad-left pad-btm pad-top1">
+                    <i class="fas fa-stream"></i>
+                    <span class="mrg-lef">Student Registration</span>
+                </a>
+            </div>
         </div>
-        <div>
-            <a routerLink="create-profile" class="flex1 pad-left pad-btm pad-top1">
-                <i class="fas fa-stream"></i>
-                <span class="mrglef dis">Teacher Registration</span>
-            </a>
-        </div>
-        <div>
-            <a routerLink="register-student" class="flex1 pad-left pad-btm pad-top1">
-                <i class="fas fa-stream"></i>
-                <span class="mrglef dis">Student Registration</span>
-            </a>
-        </div>
-        <div>
+        <div class="dropdown">
             <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-user-edit"></i>
-                <span class="mrglef dis">User Manager</span>
-                <i class="fa fa-angle-right"></i>
+                <span>User Manager</span>
+                <i class="fa fa-angle-down"></i>
             </a>
+            <div class="dropdown-content">
+                <a routerLink="teachers" class="flex1 pad-left pad-btm pad-top1">
+                    <i class="fas fa-stream"></i>
+                    <span class="mrg-lef">Manage Teachers</span>
+                </a>
+                <a routerLink="students" class="flex1 pad-left pad-btm pad-top1">
+                    <i class="fas fa-stream"></i>
+                    <span class="mrg-lef">Manage Students</span>
+                </a> 
+            </div>
         </div>
-        <div>
-            <a routerLink="teachers" class="flex1 pad-left pad-btm pad-top1">
-                <i class="fas fa-stream"></i>
-                <span class="mrglef dis">Manage Teachers</span>
-            </a>
-        </div>
-        <div>
-            <a routerLink="students" class="flex1 pad-left pad-btm pad-top1">
-                <i class="fas fa-stream"></i>
-                <span class="mrglef dis">Manage Students</span>
-            </a>
-        </div>
-        <div>
+        <div class="dropdown">
             <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
-                <span class="mrglef dis">Result</span>
-                <i class="fa fa-angle-right"></i>
+                <span>Result</span>
+                <i class="fa fa-angle-down"></i>
             </a>
-        </div>
-        <div>
-            <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
-                <i class="fas fa-stream"></i>
-                <span class="mrglef dis">Broadsheet</span>
-            </a>
-        </div>
-        <div>
-            <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
-                <i class="fas fa-stream"></i>
-                <span class="mrglef dis">Upload Score</span>
-            </a>
-        </div>
-        <div>
-            <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
-                <i class="fas fa-stream"></i>
-                <span class="mrglef dis">Report Card</span>
-            </a>
+            <div class="dropdown-content">
+                <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
+                    <i class="fas fa-stream"></i>
+                    <span class="mrg-lef">Broadsheet</span>
+                </a>
+                <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
+                    <i class="fas fa-stream"></i>
+                    <span class="mrg-lef">Upload Score</span>
+                </a>
+                <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
+                    <i class="fas fa-stream"></i>
+                    <span class="mrg-lef">Report Card</span>
+                </a>
+            </div>
         </div>
         <div>
             <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-profile"></i>
-                <span class="mrglef dis">View Profile</span>
-                <i class="fa fa-angle-right"></i>
+                <span>View Profile</span>
             </a>
         </div>
-        <div>
+        <!-- <div>
             <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Teacher's Profile</span>
@@ -89,7 +79,7 @@
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Student's Profile</span>
             </a>
-        </div>
+        </div> -->
         
     </div>
 </div>

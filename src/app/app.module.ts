@@ -25,6 +25,10 @@ import { ReportCardComponent } from './student/report-card/report-card.component
 import { CreateStudentComponent } from './admin/create-student/create-student.component';
 import { ManageTeachersComponent } from './admin/manage-teachers/manage-teachers.component';
 import { ManageStudentsComponent } from './admin/manage-students/manage-students.component';
+import { AdminBroadsheetComponent } from './admin/admin-broadsheet/admin-broadsheet.component';
+import { AdminUploadComponent } from './admin/admin-upload/admin-upload.component';
+import { AdminReportCardComponent } from './admin/admin-report-card/admin-report-card.component';
+import { TeacherOverviewComponent } from './teacher/teacher-overview/teacher-overview.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +51,11 @@ import { ManageStudentsComponent } from './admin/manage-students/manage-students
     ReportCardComponent,
     CreateStudentComponent,
     ManageTeachersComponent,
-    ManageStudentsComponent
+    ManageStudentsComponent,
+    AdminBroadsheetComponent,
+    AdminUploadComponent,
+    AdminReportCardComponent,
+    TeacherOverviewComponent
   ],
   imports: [
     BrowserModule,

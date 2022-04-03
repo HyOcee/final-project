@@ -1,0 +1,44 @@
+<p>this part should look all most the same as the upload result of the teacher, but no upload button but rather an icon that will go the student report card</p>>
+<p>i tried to duplicate it but it is given me error</p>
+<h4>kindly look at the commented code, it is usefull but it id
+    given me error
+</h4>
+
+
+<div class="posstic bx-shw bgwht z-index-5">
+    <div class="flex2 mrg-rgt pad2 font1">
+        <div class="cir1"><i class="fa fa-user"></i></div>
+        <!-- <h5 class="pad-left pad-rgt">{{admin.name}}</h5> -->
+        <button routerLink="/" class="btn clrg clw">LOG OUT</button>
+    </div>
+</div>
+
+<div class="pd-sm">
+    <div>
+        <!-- <button *ngFor="let subject of teacherInfo.subjects" (click)="displayStudents(subject)">{{subject}}</button> -->
+    </div>
+    <form>
+        <table>
+            <caption>Student Report Card</caption>
+            <thead>
+                <tr>
+                    <th>S/N</th>
+                    <th>Names of Students</th>
+                    <th>Action</th>
+                    <!-- there will be icon here that will go to the student report card page -->
+                </tr>
+            </thead>
+
+            <!-- <tbody>
+                <tr *ngFor="let student of myStudents; index as i" >
+                    <td>{{i+1}}</td>
+                    <td> {{student.name}}<input type="hidden" [value]="student.name"></td>
+                    <td><input type="number" [id]="student.username+'test'"  min="1" max="30"></td>
+                    <td><input type="number" [id]="student.username+'exam'"  min="1" max="70"></td>
+                </tr>
+            </tbody> -->
+        </table>
+
+        <!-- <button (click)="uploadResults($event)">Upload</button> -->
+    </form>
+</div>
