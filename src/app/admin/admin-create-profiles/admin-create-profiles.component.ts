@@ -22,12 +22,14 @@ export class AdminCreateProfilesComponent implements OnInit {
   private classesSelected: string[] = [] 
 
   registerTeachers(event: any): void {
+    this.classesSelected = []
     event.preventDefault()
     let checkboxes = document.querySelectorAll(`input[type='checkbox']`) as unknown as Iterable<any>
     for(let check of checkboxes){
         if(check.checked) this.classesSelected.push(check.value)
+        check.checked = false
       }
-      this.registerTeacherForm.value.subjects = this.classesSelected    
+      this.registerTeacherForm.value.subjects = this.classesSelected
 
     let allTeachers = JSON.parse(sessionStorage.getItem('teachers')!)
     allTeachers.push(this.registerTeacherForm.value)

@@ -8,89 +8,79 @@
                 <span class="dis">Dashboard</span>
             </a>
         </div>
-        <div>
-            <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
+        <div (click)="toggleRegisterPersons()">
+            <a class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-school"></i>
                 <span class="mrglef dis">School Manager</span>
-                <i class="fa fa-angle-right"></i>
+                <i *ngIf="!registerPersonsActive" class="fa fa-angle-right"></i>
+                <i *ngIf="registerPersonsActive" class="fa fa-angle-down"></i>
             </a>
         </div>
-        <div>
+        <div *ngIf="registerPersonsActive">
             <a routerLink="create-profile" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Teacher Registration</span>
             </a>
         </div>
-        <div>
+        <div *ngIf="registerPersonsActive">
             <a routerLink="register-student" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Student Registration</span>
             </a>
         </div>
-        <div>
-            <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
+        <div (click)="toggleSchoolManagerActive()">
+            <a  class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-user-edit"></i>
                 <span class="mrglef dis">User Manager</span>
-                <i class="fa fa-angle-right"></i>
+                <i *ngIf="!schoolManagerActive" class="fa fa-angle-right"></i>
+                <i *ngIf="schoolManagerActive" class="fa fa-angle-down"></i>
             </a>
         </div>
-        <div>
+        <div *ngIf="schoolManagerActive">
             <a routerLink="teachers" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Manage Teachers</span>
             </a>
         </div>
-        <div>
+        <div *ngIf="schoolManagerActive">
             <a routerLink="students" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Manage Students</span>
             </a>
         </div>
-        <div>
-            <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
+        <div (click)="toggleResultsActive()">
+            <a class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
-                <span class="mrglef dis">Result</span>
-                <i class="fa fa-angle-right"></i>
+                <span class="mrglef dis">Results</span>
+                <i *ngIf="!resultsActive" class="fa fa-angle-right"></i>
+                <i *ngIf="resultsActive" class="fa fa-angle-down"></i>
             </a>
         </div>
-        <div>
+        <div *ngIf="resultsActive">
             <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Broadsheet</span>
             </a>
         </div>
-        <div>
+        <div *ngIf="resultsActive">
             <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Upload Score</span>
             </a>
         </div>
-        <div>
+        <div *ngIf="resultsActive">
             <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Report Card</span>
             </a>
-        </div>
-        <div>
-            <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
-                <i class="fas fa-profile"></i>
-                <span class="mrglef dis">View Profile</span>
-                <i class="fa fa-angle-right"></i>
-            </a>
-        </div>
-        <div>
-            <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
-                <i class="fas fa-stream"></i>
-                <span class="mrglef dis">Teacher's Profile</span>
-            </a>
-        </div>
-        <div>
-            <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
-                <i class="fas fa-stream"></i>
-                <span class="mrglef dis">Student's Profile</span>
-            </a>
-        </div>
+        </div> 
         
+        <div>
+            <a routerLink="./" class="flex1 pad-left pad-btm pad-top1">
+                <i class="fas fa-stream"></i>
+                <span class="mrglef dis">View Profile</span>
+            </a>
+        </div>
     </div>
 </div>
 <div class="mrg-left">

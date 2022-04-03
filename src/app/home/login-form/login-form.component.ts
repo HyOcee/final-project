@@ -3,6 +3,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 
 import { Indexable } from 'src/app/data/students';
+import { getAllTeachers } from 'src/app/data/teachers';
 
 @Component({
   selector: 'app-login-form',
@@ -30,7 +31,12 @@ export class LoginFormComponent implements OnInit {
         })
       }
     } else if (this.LoginData.value.loginAs === 'teacher') {
-      this.router.navigate(['/teacher'], {queryParams: {username: this.LoginData.value.username}})
+      let allTeachers = getAllTeachers()
+      allTeachers.forEach((teacher: any) => {
+        if(teacher.username.toLowerCase() === this.LoginData.value.username.toLowerCase()){
+          this.router.navigate(['/teacher'], {queryParams: {username: this.LoginData.value.username}})
+        }
+      });
     } else {
       this.router.navigate([`/${this.LoginData.value.loginAs}`,this.LoginData.value.username])
     }

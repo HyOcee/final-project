@@ -7,6 +7,10 @@
     overflow-y: auto;
 }
 
+.scroll-x {
+    overflow-x: auto;
+}
+
 .bgwht{
     background-color: #fff;
 }
@@ -255,11 +259,27 @@ h6{
 
 .btn{
     padding: 1.5rem;
-    border-radius: 10px;
+    border-radius: 8px;
     min-width:120px;
     display: inline-block;
     margin:0.5rem;
     border:none; 
+}
+
+button:focus {
+    outline: #21205E 1px solid;
+}
+
+.btn-tables {
+    border-radius: 8px;
+    padding: 1rem;
+    min-width:120px;
+    margin: 1rem 0;
+}
+
+.btn-center {
+    display: block;
+    margin: 1rem auto !important;
 }
 
 #container{

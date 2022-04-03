@@ -8,7 +8,7 @@ export let students = {
     js3: [],
     ss1:   [
         {
-            username: 'Divine', age: 14, bio: 'Lorem is a shhitty stuff',
+            username: 'Divine', age: 14, bio: 'Lorem is the best dish. You should try it',
             name: 'Ogbonna Divine',
             subjectsOfferred: [
                 {
@@ -18,12 +18,12 @@ export let students = {
                     subject: 'physics', testScore: 0, examScore: 56
                 },
                 {
-                    subject: 'biology', testScore: 13, examScore: 44
+                    subject: 'accounting', testScore: 13, examScore: 44
                 }
             ]
         },
         {
-            username: 'Ayock', age: 14, bio: 'Lorem is a shhitty stuff',
+            username: 'Ayock', age: 14, bio: 'Lorem is the best dish. You should try it',
             name: 'Bulus Ayock',
             subjectsOfferred: [
                 {
@@ -33,12 +33,12 @@ export let students = {
                     subject: 'physics', testScore: 0, examScore: 56
                 },
                 {
-                    subject: 'biology', testScore: 13, examScore: 44
+                    subject: 'fine arts', testScore: 13, examScore: 44
                 }
             ]
         },
         {
-            username: 'Jalalat', age: 14, bio: 'Lorem is a shhitty stuff',
+            username: 'Jalalat', age: 14, bio: 'Lorem is the best dish. You should try it',
             name: 'Owodunni Jalalatullahi',
             subjectsOfferred: [
                 {
@@ -53,14 +53,14 @@ export let students = {
             ]
         },
         {
-            username: 'Helen', age: 14, bio: 'Lorem is a shhitty stuff',
+            username: 'Helen', age: 14, bio: 'Lorem is the best dish. You should try it',
             name: 'Akomolafe Helen',
             subjectsOfferred: [
                 {
                     subject: 'mathematics', testScore: 10, examScore: 8
                 },
                 {
-                    subject: 'physics', testScore: 0, examScore: 56
+                    subject: 'civic education', testScore: 0, examScore: 56
                 },
                 {
                     subject: 'biology', testScore: 13, examScore: 44
@@ -71,14 +71,14 @@ export let students = {
 
     ss2: [
         {
-            username: 'Arinze', age: 14, bio: 'Lorem is a shhitty stuff',
+            username: 'Arinze', age: 14, bio: 'Lorem is the best dish. You should try it',
             name: 'Akoriji Arinze',
             subjectsOfferred: [
                 {
-                    subject: 'mathematics', testScore: 10, examScore: 8
+                    subject: 'economics', testScore: 10, examScore: 8
                 },
                 {
-                    subject: 'physics', testScore: 0, examScore: 56
+                    subject: 'commerce', testScore: 0, examScore: 56
                 },
                 {
                     subject: 'biology', testScore: 13, examScore: 44
@@ -86,11 +86,11 @@ export let students = {
             ]
         },
         {
-            username: 'Kelly', age: 14, bio: 'Lorem is a shhitty stuff',
+            username: 'Kelly', age: 14, bio: 'Lorem is the best dish. You should try it',
             name: 'Oniha Kelly',
             subjectsOfferred: [
                 {
-                    subject: 'mathematics', testScore: 10, examScore: 8
+                    subject: 'geography', testScore: 10, examScore: 8
                 },
                 {
                     subject: 'physics', testScore: 0, examScore: 56
@@ -101,7 +101,7 @@ export let students = {
             ]
         },
         {
-            username: 'Busola', age: 14, bio: 'Lorem is a shhitty stuff',
+            username: 'Busola', age: 14, bio: 'Lorem is the best dish. You should try it',
             name: 'Omobolanle Busola',
             subjectsOfferred: [
                 {
@@ -116,11 +116,11 @@ export let students = {
             ]
         },
         {
-            username: 'Joshua', age: 14, bio: 'Lorem is a shhitty stuff',
+            username: 'Joshua', age: 14, bio: 'Lorem is the best dish. You should try it',
             name: 'Babatunde Joshua',
             subjectsOfferred: [
                 {
-                    subject: 'mathematics', testScore: 2, examScore: 58
+                    subject: 'english', testScore: 2, examScore: 58
                 },
                 {
                     subject: 'physics', testScore: 0, examScore: 56

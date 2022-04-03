@@ -33,3 +33,63 @@ body{
     background: #ffffff;
     background: #0e1c3196;
   }
+
+fieldset {
+    padding: 1.5% 2.5%;
+}
+
+form .red {
+    color: red;
+}
+
+legend {
+    padding: 0 1rem;
+    font-size: 2.2rem;
+    font-style: oblique;
+}
+
+form.registration label:not(.checkbox_ label) {
+    display: block;
+    margin: 1.2rem 0;
+}
+
+form.registration fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form.registration fieldset > div {
+    width: 47.5%;
+}
+
+form.registration input:not(input[type='checkbox'],input[type='radio']), select {
+    border: 0;
+    outline: 0;
+    border-bottom: #4c4c4d 1px solid;
+    padding: 0 0 0.5rem 0.5rem;
+    width: 80%;
+}
+
+.checkbox_ {
+    display: inline-flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+::placeholder {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+form.registration button.submit {
+    color: #fff;
+    background-color: #3b3b3b;
+    padding: 16px;
+    width: 200px;
+    display: block;
+    margin: 2rem auto 0;
+}
+
+.wide {width: 100% !important;}

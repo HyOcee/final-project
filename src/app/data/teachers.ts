@@ -1,19 +1,35 @@
 export let teachers = [
     {
-        name: 'Mr Abdullahi', username: 'Abdul',
-        subjects: ['Mathematics','Physics','Biology']
+        name: 'Derek Peters', username: 'peter',
+        subjects: ['Mathematics','Physics','Economics']
     },
     {
         name: 'Kayode Sam', username: 'Kay',
-        subjects: ['Yoruba','CCA','Biology']
+        subjects: ['Yoruba','Literature','Biology']
     },
     {
         name: 'Kofi Annan', username: 'Kofi',
-        subjects: ['Literature','CRK','PHE']
+        subjects: ['Literature','English','PHE']
     },
     {
         name: 'Aladesanmu Favor', username: 'Favor',
-        subjects: ['Government','Physics','Social Studies']
+        subjects: ['agricultural science','Chemistry','Social Studies']
+    },
+    {
+        name: 'Sadio Mane', username: 'saed',
+        subjects: ['Mathematics','Physics','Economics']
+    },
+    {
+        name: 'Cristiano Ronaldo', username: 'cr7',
+        subjects: ['PHE','Literature','Biology']
+    },
+    {
+        name: 'Damilola Helen', username: 'ennyitan',
+        subjects: ['Biology','English','Physics']
+    },
+    {
+        name: 'Okunola Tomiwa', username: 'tommy',
+        subjects: ['Government','Chemistry','Social Studies']
     },
 ]
 

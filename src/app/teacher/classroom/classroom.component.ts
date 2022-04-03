@@ -25,6 +25,7 @@ export class ClassroomComponent implements OnInit {
       for(let student of studentsFromSessionStorage[klass]){
         for(let subject of student.subjectsOfferred){
           if(subject.subject.toLowerCase() === subjectRequested.toLowerCase()){
+            
             this.myStudents.push(student)
           }
         }

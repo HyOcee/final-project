@@ -18,7 +18,6 @@ export class StudentComponent implements OnInit {
     this.route.queryParams.subscribe(params => {
       this.studentName = params['username']
     })
-    console.log(this.studentName)
   }
 
 }

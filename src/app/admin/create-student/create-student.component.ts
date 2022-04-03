@@ -20,10 +20,12 @@ export class CreateStudentComponent implements OnInit {
   public listSubjects: string[] = []
   
   registerStudent(event: any){
+    this.listSubjects = []
     event.preventDefault()
     let checkboxes = document.querySelectorAll(`input[type='checkbox']`) as unknown as Iterable<any>
     for(let check of checkboxes){
         if(check.checked) this.listSubjects.push(check.value)
+        check.checked = false
       }
       let newStudentObject: any = {}
       newStudentObject.username = this.newStudent.value.username

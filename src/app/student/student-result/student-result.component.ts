@@ -22,8 +22,5 @@ export class StudentResultComponent implements OnInit {
       this.studentName = params['username']
     })
     this.studentInfo = getStudentInfo(this.studentName)
-    for(let subjecct of this.studentInfo.subjectsOfferred){
-      console.log(subjecct)
-    }
   }
 }

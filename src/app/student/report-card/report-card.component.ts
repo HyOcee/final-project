@@ -14,14 +14,20 @@ export class ReportCardComponent implements OnInit {
   public studentInfo: any
   public studentName: any
 
+  public marksObtainable: number = 0
+  public marksObtained: number = 0
+
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
       this.studentName = params['username']
     })
-    console.log(this.studentName)
     this.studentInfo = getStudentInfo(this.studentName)
+    for(let subject of this.studentInfo.subjectsOfferred){
+      subject.totalScore = subject.testScore + subject.examScore
+      this.marksObtainable += 100;
+      this.marksObtained += subject.totalScore
+    }
   }
-
 }
