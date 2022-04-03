@@ -132,8 +132,16 @@ body{
     width:10%;
 }
 
+.wid4{
+    width:70%;
+}
+
 .ht{
     height:100vh;
+}
+
+.ht1{
+    height:20px;
 }
 
 .ht2{
@@ -202,6 +210,11 @@ a{
     align-items: center;
 }
 
+/* .flex-sta{
+    display: flex;
+    justify-items:flex-start;
+} */
+
 .bdr{
     border:solid 2px rgb(37, 37, 37)
 }
@@ -226,6 +239,10 @@ td, th {
   
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+.rota{
+    transform: rotate(270deg);
 }
 
 h6{

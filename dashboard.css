@@ -17,7 +17,7 @@ body{
 /* colors */
 
 .bdgblu{
-    background-color:rgb(0, 44, 76);
+    background-color:#155244;
     color:#fff;
 }
 
@@ -175,11 +175,11 @@ body{
 }
 
 #dash{
-    background-color: #2bac52;
+    background-color:#28947b;
 }
 
 a:hover{
-    background-color:#2bac52;
+    background-color:#28947b;
 }
 
 a{

@@ -136,6 +136,10 @@ body{
     height:100vh;
 }
 
+.ht1{
+    height:20px;
+}
+
 .ht2{
     height:10vh;
 }
@@ -226,6 +230,10 @@ td, th {
   
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+.rota{
+    transform: rotate(270deg);
 }
 
 h6{

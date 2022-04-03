@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="broadsheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="bdgblu ht font2 wid1 posfix">
         <i class="fa fa-bars"></i>
@@ -15,12 +17,12 @@
         <div class="pad-top">
             <div><a href="#" class="flex1 pad-left pad-btm pad-top1"><i class="fa fa-memo"></i><span
                         class="mrglef dis">Result</span><i class="fa fa-angle-right"></i></a></div>
-            <div><a href="studentresult.html" class="flex1 pad-left pad-btm"></i><span
-                        class="mrglef dis">View Result </span></i></a></div>
-            <div><a href="studentreportCard.html" class="flex1 pad-left pad-btm"><span
-                        class="mrglef dis">My Report Card</span></a></div>
-            <div><a href="profile.html" class="flex1 pad-left pad-btm"><span
-                        class="mrglef dis">My Profile</span></a></div>
+            <div><a href="studentresult.html" class="flex1 pad-left pad-btm"></i><span class="mrglef dis">View Result
+                    </span></i></a></div>
+            <div><a href="studentreportCard.html" class="flex1 pad-left pad-btm"><span class="mrglef dis">My Report
+                        Card</span></a></div>
+            <div><a href="profile.html" class="flex1 pad-left pad-btm"><span class="mrglef dis">My Profile</span></a>
+            </div>
         </div>
     </div>
     <div class="posstic mrg-left2 bx-shw ht2 bgwht">
@@ -30,14 +32,10 @@
             <button class="btn bdgblu">LOG OUT</button>
         </div>
     </div>
-    <!-- <div class="mrg-left txt-alg pad1">
-        <h4 class="font1">Result</h4> 
-        <p class="fonts">View class Student and their results</p>
-    </div> -->
-    <!-- <div class="mrg-left1 bx-shw pad1 font1 mrg-rgt">
+    <div class="mrg-left1 bx-shw pad1 font1 mrg-rgt">
         <h5>School Code</h5>
         <h6>23456</h6>
-    </div> -->
+    </div>
     <div class="card mrg-left mrg-rgt mrg-top pad1">
         <div class="txt-alg font1">
             <h4>Result Broadsheet</h4>
@@ -50,146 +48,179 @@
                 </div>
                 <p>MINISTRY OF EDUCATION</p>
             </div>
-            <div class="flexcol">
-                <select>
-                    <option value="0">
-                        Session Term: Select Term
-                    </option>
-                    <option value="1">
-                        2021/2022 second Term
-                    </option>
-                </select>
-                <select>
-                    <option value="0">Programme: Select Category</option>
-                </select>
-                <select>
-                    <option value="0">Class: Select Class</option>
-                </select>
+            <div class="flexcol wid4 pad-top">
+                <div class="flex">
+                    <div class="wid1">
+                        <h2>Select Term:</h2>
+                    </div>
+                    <select class="wid2 ">
+                        <option value="0">Select Term</option>
+                        <option value="1">2021/2022 - First Term</option>
+                        <option value="1">2021/2022 - Second Term</option>
+                        <option value="1">2021/2022 - Third Term</option>
+                    </select>
+                </div>
+                <div class="flex mrg-top1">
+                    <div class="wid1">
+                        <h2>Programme:</h2>
+                    </div>
+                    <select class="wid2">
+                        <option value="0">Select Category</option>
+                        <option value="1">Junior Secondary School</option>
+                        <option value="1">Senior Secondary School</option>
+                    </select>
+                </div>
+                <div class="flex mrg-top1">
+                    <div class="wid1">
+                        <h2>Class:</h2>
+                    </div>
+                    <select class="wid2">
+                        <option value="0">Select Class</option>
+                        <option value="1">JSS1</option>
+                        <option value="1">JSS2</option>
+                        <option value="1">JSS3</option>
+                        <option value="1">SSS1</option>
+                        <option value="1">SSS2</option>
+                        <option value="1">SSS3</option>
+                    </select>
+                </div>
+                <div class="flex mrg-top1">
+                    <div class="wid1">
+                        <h2>Select Subject:</h2>
+                    </div>
+                    <select class="wid2">
+                        <option value="0">Select Subject</option>
+                        <option value="1">Mathematics</option>
+                        <option value="2">English</option>
+                        <option value="3">Civic Education</option>
+                    </select>
+                </div>
             </div>
-               <div class="over">
-               <table class="mrg-top">
-                <tr>
-                    <th rowspan="2">S/N</th>
-                    <th rowspan="2">Reg No.</th>
-                    <th rowspan="2">Name of Student</th>
-                    <th rowspan="2">Gender</th>
-                    <th colspan="4">MATHEMATICS</th>
-                    <th colspan="4">ENGLISH</th>
-                    <th colspan="4">CIVIC EDUCATION</th>
-                    <th colspan="4">ECONOMICS</th>
-                </tr>
-                <tr>
-                    <th>CA(30)</th>
-                    <th>EXAM(70)</th>
-                    <th>TOTAL(100)</th>
-                    <th>GRADE</th>
-                    <th>CA(30)</th>
-                    <th>EXAM(70)</th>
-                    <th>TOTAL(100)</th>
-                    <th>GRADE</th>
-                    <th>CA(30)</th>
-                    <th>EXAM(70)</th>
-                    <th>TOTAL(100)</th>
-                    <th>GRADE</th>
-                    <th>CA(30)</th>
-                    <th>EXAM(70)</th>
-                    <th>TOTAL(100)</th>
-                    <th>GRADE</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>001</td>
-                    <td>Abayomi Fawaz</td>
-                    <td>Male</td>
-                    <td>38</td>
-                    <td>67</td>
-                    <td>34</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>001</td>
-                    <td>Abayomi Fawaz</td>
-                    <td>Male</td>
-                    <td>30</td>
-                    <td>24</td>
-                    <td>25</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>001</td>
-                    <td>Abayomi Fawaz</td>
-                    <td>Male</td>
-                    <td>70</td>
-                    <td>31</td>
-                    <td>14</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                <tr>
-                    <td>1</td>
-                    <td>001</td>
-                    <td>Abayomi Fawaz</td>
-                    <td>Male</td>
-                    <td>55</td>
-                    <td>39</td>
-                    <td>50</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-            </div>
-                <button class="mrg-left1 btn bdgblu mrg-top1"><i class="fa fa-print"></i><span class="mrg-left3">Print Result</span></button>
+                    <div class="over">
+                        <table class="mrg-top">
+                            <tr>
+                                <th rowspan="2">S/N</th>
+                                <th rowspan="2">Reg No.</th>
+                                <th rowspan="2">Name of Student</th>
+                                <th rowspan="2">Gender</th>
+                                <th colspan="4">MATHEMATICS</th>
+                                <th colspan="4">ENGLISH</th>
+                                <th colspan="4">CIVIC EDUCATION</th>
+                                <th colspan="4">ECONOMICS</th>
+                            </tr>
+                            <tr class="ht1">
+                                <th class="rota">CA(30)</th>
+                                <th class="rota">EXAM(70)</th>
+                                <th class="rota">TOTAL(100)</th>
+                                <th class="rota">GRADE</th>
+                                <th class="rota">CA(30)</th>
+                                <th class="rota">EXAM(70)</th>
+                                <th class="rota">TOTAL(100)</th>
+                                <th class="rota">GRADE</th>
+                                <th class="rota">CA(30)</th>
+                                <th class="rota">EXAM(70)</th>
+                                <th class="rota">TOTAL(100)</th>
+                                <th class="rota">GRADE</th>
+                                <th class="rota">CA(30)</th>
+                                <th class="rota">EXAM(70)</th>
+                                <th class="rota">TOTAL(100)</th>
+                                <th class="rota">GRADE</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>001</td>
+                                <td>Abayomi Fawaz</td>
+                                <td>Male</td>
+                                <td>38</td>
+                                <td>67</td>
+                                <td>34</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>001</td>
+                                <td>Abayomi Fawaz</td>
+                                <td>Male</td>
+                                <td>30</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>001</td>
+                                <td>Abayomi Fawaz</td>
+                                <td>Male</td>
+                                <td>70</td>
+                                <td>31</td>
+                                <td>14</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            <tr>
+                                <td>1</td>
+                                <td>001</td>
+                                <td>Abayomi Fawaz</td>
+                                <td>Male</td>
+                                <td>55</td>
+                                <td>39</td>
+                                <td>50</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                <button class="mrg-left1 btn bdgblu mrg-top1"><i class="fa fa-print"></i><span
+                    class="mrg-left3">Print Result</span></button>
             </div>
         </div>
-    </div>
 
 
-    <script src="https://kit.fontawesome.com/aedd297eaa.js" crossorigin='anonymous'></script>
+        <script src="https://kit.fontawesome.com/aedd297eaa.js" crossorigin='anonymous'></script>
 </body>
+
 </html>
