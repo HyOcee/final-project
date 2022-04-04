@@ -2,17 +2,17 @@
     <div class="flex2 mrg-rgt pad2 font1">
         <div class="cir1"><i class="fa fa-user"></i></div>
         <h5 class="pad-left pad-rgt">{{teacherInfo.name}}</h5>
-        <button routerLink="/" class="btn bdgblu">LOG OUT</button>
+        <button routerLink="/" class="btn clrg clw">LOG OUT</button>
     </div>
 </div>
 
 <div class="pd-sm">
-    <div class="title-dashboard">
-        Total Number of Students: {{totalStudents}}
+    <div class="show-buttons">
+        <button *ngFor="let subject of teacherInfo.subjects" (click)="displayStudents(subject)">{{subject}}</button>
     </div>
 
-    <div>
-        <button *ngFor="let subject of teacherInfo.subjects" (click)="displayStudents(subject)">{{subject}}</button>
+    <div class="title-dashboard" *ngIf="totalStudents">
+        Total Number of Students: {{totalStudents}}
     </div>
 
     <div class="personnel-container">

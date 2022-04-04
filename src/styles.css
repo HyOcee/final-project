@@ -26,7 +26,7 @@ body{
 ::-webkit-scrollbar-thumb {
     background-color: #3b3b3b;
     border-radius: 10px;
-    border: 3px solid #4c4c4d;
+    border: 3px solid #155244;
   }
 
 ::-webkit-scrollbar-track {
@@ -66,7 +66,7 @@ form.registration fieldset > div {
 form.registration input:not(input[type='checkbox'],input[type='radio']), select {
     border: 0;
     outline: 0;
-    border-bottom: #4c4c4d 1px solid;
+    border-bottom: #155244 1px solid;
     padding: 0 0 0.5rem 0.5rem;
     width: 80%;
 }
@@ -85,7 +85,7 @@ form.registration input:not(input[type='checkbox'],input[type='radio']), select 
 
 form.registration button.submit {
     color: #fff;
-    background-color: #3b3b3b;
+    background-color: #28947b;
     padding: 16px;
     width: 200px;
     display: block;
@@ -93,3 +93,17 @@ form.registration button.submit {
 }
 
 .wide {width: 100% !important;}
+
+.show-buttons {
+    margin: 0 0 2rem;
+}
+
+.show-buttons button {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1.4rem;
+    color: white;
+    background-color: #28947b;
+    border: #155244 1px solid;
+    padding: 1.2rem 1.8rem;
+}
