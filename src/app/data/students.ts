@@ -3,10 +3,7 @@ export interface Indexable {
 }
 
 export let students = {
-    js1: [],
-    js2: [],
-    js3: [],
-    ss1:   [
+    js1: [
         {
             username: 'Divine', age: 14, bio: 'Lorem is the best dish. You should try it',
             name: 'Ogbonna Divine',
@@ -21,7 +18,11 @@ export let students = {
                     subject: 'accounting', testScore: 13, examScore: 44
                 }
             ]
-        },
+        }
+    ],
+    js2: [],
+    js3: [],
+    ss1:   [
         {
             username: 'Ayock', age: 14, bio: 'Lorem is the best dish. You should try it',
             name: 'Bulus Ayock',

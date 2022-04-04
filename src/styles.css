@@ -26,7 +26,7 @@ body{
 ::-webkit-scrollbar-thumb {
     background-color: #3b3b3b;
     border-radius: 10px;
-    border: 3px solid #155244;
+    /* border: 3px solid #155244; */
   }
 
 ::-webkit-scrollbar-track {
@@ -98,7 +98,7 @@ form.registration button.submit {
     margin: 0 0 2rem;
 }
 
-.show-buttons button {
+.show-buttons button, .submit-results {
     display: inline-block;
     margin: 0 1rem;
     font-size: 1.4rem;
@@ -106,4 +106,20 @@ form.registration button.submit {
     background-color: #28947b;
     border: #155244 1px solid;
     padding: 1.2rem 1.8rem;
+    border-radius: 5px;
+}
+
+.submit-results {
+    display: block !important;
+    margin: 2rem 0 0 auto  !important;
+    width: 150px !important;
+}
+
+@media only print {
+    .mrg-left {
+        margin-left: 0 !important;
+    }
+   .not-print {
+    display: none;
+   } 
 }

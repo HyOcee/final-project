@@ -1,4 +1,4 @@
-<div class="posstic bx-shw bgwht z-index-5">
+<div class="posstic bx-shw bgwht z-index-5 not-print">
     <div class="flex2 mrg-rgt pad2 font1">
         <div class="cir1"><i class="fa fa-user"></i></div>
         <h5 class="pad-left pad-rgt">{{studentInfo.name}}</h5>
@@ -14,18 +14,24 @@
         <div class="font2 mrg-top1">
             <p>Registered Session Term</p>
         </div>
-        <div class="bdr mrg-rgt1 mrg-top1">
-            <h5 class="font2">2021/2022-First Term<i class="fa fa-angle-down"></i></h5>
+        <div class="bdr flex mrg-top1">
+            <div class="wid1"><h2>Select Term:</h2></div>
+                <select class="wid2">
+                    <option value="0">Select Term</option>
+                    <option value="1">2021/2022 - First Term</option>
+                    <option value="1">2021/2022 - Second Term</option>
+                    <option value="1">2021/2022 - Third Term</option>
+                </select>
         </div>
     </div>
     <div class="card mrg-top pad1">
         <div class="font1 flex">
-            <h4 class="wid2">Report Sheet</h4>
-            <button class="mrg-left1 btn-tables clrg clw"><i class="fa fa-print"></i>Print Result</button>
+            <h4 class="">Report Sheet</h4>
+            <button (click)="printResult()" class="mrg-left1 btn-tables clrg clw not-print"><i class="fa fa-print"></i>Print Result</button>
         </div>
         <div class="font1 txt-alg">
             <div class="clrblu">
-                <img src="img/c.jpg" class="wid3">
+                <img src="/assets/img/round-track-icon.png" class="wid1">
                 <h2>CITY MODEL GROUP OF SCHOOL</h2>
             </div>
             <p>MINISTRY OF EDUCATION</p>

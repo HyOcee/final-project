@@ -17,6 +17,10 @@ export class ReportCardComponent implements OnInit {
   public marksObtainable: number = 0
   public marksObtained: number = 0
 
+  printResult() {
+    window.print()
+  }
+
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {

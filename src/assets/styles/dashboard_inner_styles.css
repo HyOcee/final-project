@@ -10,9 +10,9 @@ html {
     overflow-x: auto;
 }
 
-tr:nth-child(even) {
+/* tr:nth-child(even) {
     background-color: unset;
-}
+} */
 
 .pd-l-t {
     padding: 5% 7% 5%;
@@ -59,7 +59,7 @@ tr:nth-child(even) {
 .personnel-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center;1 */
 }
 
 .personnel-container {

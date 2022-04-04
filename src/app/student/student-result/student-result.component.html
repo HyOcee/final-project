@@ -1,4 +1,4 @@
-<div class="posstic bx-shw bgwht z-index-5">
+<div class="posstic bx-shw bgwht z-index-5 not-print">
     <div class="flex2 mrg-rgt pad2 font1">
         <div class="cir1"><i class="fa fa-user"></i></div>
         <h5 class="pad-left pad-rgt">{{studentInfo.name}}</h5>
@@ -11,7 +11,7 @@
     <div class="card mrg-top1 pad1">
         <div class="font1 txt-alg">
             <div class="clrblu">
-                <img src="img/c.jpg" class="wid3">
+                <img src="/assets/img/round-track-icon.png" class="wid1">
                 <h2>CITY MODEL GROUP OF SCHOOL</h2>
             </div>
             <p>MINISTRY OF EDUCATION</p>
@@ -41,7 +41,7 @@
                     <td>{{subjectData.testScore + subjectData.examScore >= 70? 'A' : subjectData.testScore + subjectData.examScore >= 60? 'B': subjectData.testScore + subjectData.examScore >= 50? 'C': subjectData.testScore + subjectData.examScore >= 40? 'D' : 'F'}}</td>
                 </tr>
             </table>
-            <button class="mrg-left1 btn-tables clrg clw"><i class="fa fa-print"></i>Print Result</button>
+            <button (click)="printResult()" class="mrg-tl btn-tables clrg clw not-print mrg-left"><i class="fa fa-print mrg-rgt"></i>Print Result</button>
         </div>
     </div>
 </div>

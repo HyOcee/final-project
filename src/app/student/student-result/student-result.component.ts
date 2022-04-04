@@ -15,6 +15,10 @@ export class StudentResultComponent implements OnInit {
   public studentInfo: any
   public studentName: any
 
+  printResult() {
+    window.print()
+  }
+
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
