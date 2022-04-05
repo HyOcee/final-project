@@ -1,0 +1,60 @@
+<div class="posstic bx-shw bgwht z-index-5">
+    <div class="flex2 mrg-rgt pad2 font1">
+        <div class="cir1"><i class="fa fa-user"></i></div>
+        <h5 class="pad-left pad-rgt">ADMINISTRATOR</h5>
+        <button routerLink="/" class="btn clrg clw">LOG OUT</button>
+    </div>
+</div>
+
+<div class="pd-l-t">
+    
+    <form action="" [formGroup]="newStudent" class="registration">
+        <fieldset>
+
+        <legend>Student Registration</legend>
+            <div>
+                <label for="">Name <span class="red">*</span></label>
+                <input type="text" formControlName="name"  placeholder="e.g Ogbonna Divine">
+            </div>
+
+            <div>
+                <label for="">Username <span class="red">*</span></label>
+                <input type="text" formControlName="username"  placeholder="divine">
+            </div>
+
+            <div>
+                <label for="">Class <span class="red">*</span></label>
+                <select formControlName="class">
+                    <option *ngFor="let class of classes; last as l" [selected]="l" value="{{class}}">{{class | uppercase}}</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="">Date of Birth</label>
+            <input type="date" >
+            </div>
+
+            <div class="checkboxes">
+                <label for="">Subjects <span class="red">*</span></label>
+            <span class="checkbox_" *ngFor="let subject of subjects">
+                <input type="checkbox" [id]="subject" [value]="subject"> 
+                <label for="{{subject}}">{{subject | uppercase}}</label>
+            </span>
+            </div>
+
+            <div>
+                <label for="">Address</label>
+                <input type="text" placeholder="Ikorodu">
+
+                <label for="">Parents' Name</label>
+                <input type="text" placeholder="Mr. Okunola">
+
+                <label for="">Parents' Contact</label>
+                <input type="text" placeholder="Parents Contact">
+            </div>
+
+            <button (click)="registerStudent($event)" class="submit btn clrg clw">Register</button>
+        </fieldset>
+
+    </form>
+</div>

@@ -1,0 +1,40 @@
+<div class="posstic bx-shw bgwht z-index-5">
+    <div class="flex2 mrg-rgt pad2 font1">
+        <div class="cir1"><i class="fa fa-user"></i></div>
+        <h5 class="pad-left pad-rgt">ADMINISTRATOR</h5>
+        <button routerLink="/" class="btn clrg clw">LOG OUT</button>
+    </div>
+</div>
+
+<div class="pd-sm">
+    <div class="show-buttons">
+        <div><h4>Select Subject:</h4></div>
+        
+            <button *ngFor="let subject of subjectsOfferred" [value]="subject" (click)="displayStudents(subject)">{{subject | uppercase}}</button>
+    </div>
+
+    <form *ngIf="enrolledStudents">
+        <table>
+            <caption>{{currentSubject | uppercase}} RESULTS</caption>
+            <thead>
+                <tr>
+                    <th>S/N</th>
+                    <th>Names of Students</th>
+                    <th>Test Scores</th>
+                    <th>Examination Scores</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let student of enrolledStudents; index as i" >
+                    <td>{{i+1}}</td>
+                    <td> {{student.name}}<input type="hidden" [value]="student.name"></td>
+                    <td><input type="number" [id]="student.username+'test'"  min="1" max="30"></td>
+                    <td><input type="number" [id]="student.username+'exam'"  min="1" max="70"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button (click)="uploadResults($event)">Upload</button>
+    </form>
+</div>

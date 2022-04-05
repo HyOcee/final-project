@@ -1,0 +1,41 @@
+<div class="posstic bx-shw bgwht z-index-5">
+    <div class="flex2 mrg-rgt pad2 font1">
+        <div class="cir1"><i class="fa fa-user"></i></div>
+        <h5 class="pad-left pad-rgt">ADMINISTRATOR</h5>
+        <button routerLink="/" class="btn clrg clw">LOG OUT</button>
+    </div>
+</div>
+
+<div class="pd-l-t">
+    <form  [formGroup]="registerTeacherForm" class="registration">
+       <fieldset>
+           <legend>Register New Teacher</legend>
+
+        <div>
+            <label for="name">Name of Teacher <span class="red">*</span></label><input type="text" placeholder="Alaketu Olamilekan" formControlName="name">
+        </div>
+
+        <div>
+            <label for="username">Username <span class="red">*</span></label><input type="text" placeholder="beardedPrince" formControlName="username">
+        </div>
+        
+        <div>
+            <label for="email">E-mail</label><input type="text" placeholder="bearded@gmail.com">
+        </div>
+
+        <div>
+            <label for="address">Address</label><input type="text" placeholder="address">
+        </div>
+
+        <div class="wide checkboxes">
+            <label for="">Subjects <span class="red">*</span></label>
+            <span *ngFor="let subject of allSubjects" class="checkbox_">
+                <input type="checkbox" [id]="subject" [value]="subject"> <label  for="{{subject}}">{{subject | uppercase}}</label>
+            </span>
+        </div>
+
+
+        <button (click)="registerTeachers($event)" class="submit btn clrg clw">Register</button>
+       </fieldset>
+    </form>
+</div>

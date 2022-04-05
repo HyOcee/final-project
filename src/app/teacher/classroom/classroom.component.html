@@ -1,0 +1,30 @@
+<div class="posstic bx-shw bgwht z-index-5">
+    <div class="flex2 mrg-rgt pad2 font1">
+        <div class="cir1"><i class="fa fa-user"></i></div>
+        <h5 class="pad-left pad-rgt">{{teacherInfo.name}}</h5>
+        <button routerLink="/" class="btn clrg clw">LOG OUT</button>
+    </div>
+</div>
+
+<div class="pd-sm">
+    <div class="show-buttons">
+        <button *ngFor="let subject of teacherInfo.subjects" (click)="displayStudents(subject)">{{subject}}</button>
+    </div>
+
+    <div class="title-dashboard" *ngIf="totalStudents">
+        Total Number of Students: {{totalStudents}}
+    </div>
+
+    <div class="personnel-container">
+        <div *ngFor="let student of myStudents" class="profile-card">
+            <img src="https://cdn.vectorstock.com/i/1000x1000/46/65/approved-icon-profile-verification-accept-badge-vector-26934665.webp" alt="">
+            <div>
+                <h4>Name: {{student.name}}</h4>
+                <p>Age: {{student.age}}</p>
+                <p>Subjects: <span *ngFor="let subject of student.subjectsOfferred">{{subject.subject}} </span> </p>
+            </div>
+
+            <i class="fas fa-qrcode"></i>
+        </div>
+    </div>
+</div>

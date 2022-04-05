@@ -1,0 +1,25 @@
+<div class="posstic bx-shw bgwht z-index-5">
+    <div class="flex2 mrg-rgt pad2 font1">
+        <div class="cir1"><i class="fa fa-user"></i></div>
+        <h5 class="pad-left pad-rgt">ADMINISTRATOR</h5>
+        <button routerLink="/" class="btn clrg clw">LOG OUT</button>
+    </div>
+</div>
+
+<div class="pd-sm">
+    <div class="title-dashboard">
+        Total Number of Teachers: {{noOfTeachers}}
+    </div>
+
+    <div class="personnel-container">
+        <div *ngFor="let teacher of allTeachers" class="profile-card">
+            <img src="https://cdn.vectorstock.com/i/1000x1000/67/73/green-check-mark-and-red-cross-icon-set-approved-vector-26936773.webp" alt="">
+            <div>
+                <h4>Name: {{teacher.name}}</h4>
+                <p>Subjects: <span *ngFor="let subject of teacher.subjects">{{subject | titlecase}}, </span> </p>
+                <p>Bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis.</p>
+            </div>
+            <i class="fas fa-qrcode"></i>
+        </div> 
+    </div>
+</div>

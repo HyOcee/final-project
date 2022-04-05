@@ -1,0 +1,23 @@
+<div class="moveX form-div drk">
+    <h1 class="m-btm">Log In</h1>
+    <form [formGroup]="LoginData" (ngSubmit)="Login($event)">
+        <div class="m-btm sm-inputs-div">
+            <input type="radio" formControlName="loginAs" id="admin" value="admin"> 
+            <label for="admin" class="c-pointer">Admin</label> 
+
+            <input type="radio" formControlName="loginAs" id="teacher" value="teacher"> 
+            <label for="teacher" class="c-pointer">Teacher</label> 
+
+            <input type="radio" formControlName="loginAs" id="student" value="student"> 
+            <label for="student" class="c-pointer">Student</label> 
+        </div>
+
+        <input formControlName="username" type="text" placeholder="Username">
+        <input formControlName="password" type="email" placeholder="Password">
+        <div class="m-btm sm-inputs-div">
+            <input type="checkbox" id="rememberMe"><label for="rememberMe" class="c-pointer">Remember me</label>
+        </div>
+        <button [disabled]="" class="bdgblu lt-bl">Sign in</button>
+        <div>To register a new school <span routerLink="/signup" class="anchor-like c-pointer">Click here</span></div>
+    </form>
+</div>
