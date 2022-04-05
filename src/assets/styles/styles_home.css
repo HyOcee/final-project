@@ -3,8 +3,13 @@
     font-size: 32px;
 }
 
+.logo img {
+    width: 100px;
+}
+
 .bckimg{
     background-image: url("/assets/img/img1.jpg");
+    background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url("/assets/img/img1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -14,6 +19,14 @@
 .cld{
     text-decoration: none;
     color:red;
+}
+
+.orange {
+    color: orange;
+}
+
+.white {
+    color: white;
 }
 
 header {
@@ -62,7 +75,11 @@ button:disabled {
 
 .form-div {
     padding: 2.5%;
-    background-color: #a5c7a3b6;
+    background-color: #fafafae3;
+}
+
+.orange-bg {
+    background-color:#155244;
 }
 
 button:focus:not(:disabled), button:hover:not(:disabled) {
