@@ -1,5 +1,6 @@
 <div class="posstic bx-shw bgwht z-index-5">
-    <div class="flex2 mrg-rgt pad2 font1">
+    <div class="flex2 pad2 font1">
+        <i class="fa fa-bars nav-slide"  (click)="toggleNav()"></i>
         <div class="cir1"><i class="fa fa-user"></i></div>
         <h5 class="pad-left pad-rgt">{{studentInfo.name}}</h5>
         <button routerLink="/" class="btn clrg clw">LOG OUT</button>
@@ -10,7 +11,7 @@
     <div class="profile-pic">
         <img src="https://i.pravatar.cc/300" alt="profile picture">
         <div>
-            <h3>{{studentInfo.name}}</h3>
+            <h3>{{studentInfo.name | titlecase}}</h3>
             <p>Student</p>
             <p>St. Margaret's School</p>
         </div>

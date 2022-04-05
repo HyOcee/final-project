@@ -14,6 +14,11 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     if(!sessionStorage.getItem('students')) sessionStorage.setItem('students',JSON.stringify(students))
     if(!sessionStorage.getItem('teachers')) sessionStorage.setItem('teachers',JSON.stringify(teachers))
+    if(!sessionStorage.getItem('schools'))  sessionStorage.setItem('schools', JSON.stringify({
+      username: 'citigroup',
+      schoolName: 'City Model Group of Schools',
+      schoolID: '8978CT'
+    }))
   }
 
 }

@@ -1,5 +1,6 @@
 <div class="posstic bx-shw bgwht z-index-5">
-    <div class="flex2 mrg-rgt pad2 font1">
+    <div class="flex2 pad2 font1">
+        <i class="fa fa-bars nav-slide"  (click)="toggleNav()"></i>
         <div class="cir1"><i class="fa fa-user"></i></div>
         <h5 class="pad-left pad-rgt">ADMINISTRATOR</h5>
         <button routerLink="/" class="btn clrg clw">LOG OUT</button>
@@ -7,10 +8,12 @@
 </div>
 
 <div class="pd-sm">
-    <div class="show-buttons">
+    <div class="show-buttons" [formGroup]="selectedSubject">
         <div><h4>Select Subject:</h4></div>
         
-            <button *ngFor="let subject of subjectsOfferred" [value]="subject" (click)="displayStudents(subject)">{{subject | uppercase}}</button>
+        <select formControlName="subject" name="" id="" (change)="getValue()">
+            <option *ngFor="let subject of subjectsOfferred" [value]="subject" (click)="displayStudents(subject)">{{subject | uppercase}}</option>
+        </select>
     </div>
 
     <form *ngIf="enrolledStudents">

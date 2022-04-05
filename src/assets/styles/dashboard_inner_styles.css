@@ -10,10 +10,6 @@ html {
     overflow-x: auto;
 }
 
-/* tr:nth-child(even) {
-    background-color: unset;
-} */
-
 .pd-l-t {
     padding: 5% 7% 5%;
 }
@@ -70,6 +66,13 @@ html {
     width: 45%;
 }
 
+@media screen and (max-width: 720px) {
+    .profile-details-cont > div {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
 .profile-details-cont > div:not(:last-child) {
     margin-right: 3%;
 }
@@ -111,4 +114,11 @@ html {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 720px) {
+    .profile-card {
+        width: 80%;
+        margin: 1rem auto;
+    }
 }

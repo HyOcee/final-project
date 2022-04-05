@@ -1,5 +1,6 @@
 <div class="posstic bx-shw bgwht z-index-5 not-print">
-    <div class="flex2 mrg-rgt pad2 font1">
+    <div class="flex2 pad2 font1 posrel">
+        <i class="fa fa-bars nav-slide"  (click)="toggleNav()"></i>
         <div class="cir1"><i class="fa fa-user"></i></div>
         <h5 class="pad-left pad-rgt">{{studentInfo.name}}</h5>
         <button routerLink="/" class="btn clrg clw">LOG OUT</button>
@@ -17,31 +18,33 @@
             <p>MINISTRY OF EDUCATION</p>
         </div>
         <div class="pad-top font1">
-           <div><p>Name of Student: <span class="fontwht">{{studentInfo.name}}</span></p></div>
+           <div><p>Name of Student: <span class="fontwht">{{studentInfo.name | uppercase}}</span></p></div>
            <div><p>Student Class: <span class="fontwht">{{studentInfo.class | uppercase}}</span></p></div>
            <div><p>Student ID: <span class="fontwht">{{studentInfo.studentID ? studentInfo.studentID : '1247'}}</span></p></div>
-            <table class="mrg-top">
-                <tr>
-                    <th>No.</th>
-                    <th>Subjects</th>
-                    <th>CA (30)</th>
-                    <th>EXAM (70)</th>
-                    <th>Total (100)</th>
-                    <th>Percentage (100%)</th>
-                    <th>Grade</th>
-                </tr>
-                
-                <tr *ngFor="let subjectData of studentInfo.subjectsOfferred;  index as i">
-                    <td>{{i + 1}}</td>
-                    <td>{{subjectData.subject | uppercase}}</td>
-                    <td>{{subjectData.testScore}}</td>
-                    <td>{{subjectData.examScore}}</td>
-                    <td>{{subjectData.testScore + subjectData.examScore}}</td>
-                    <td>{{subjectData.testScore + subjectData.examScore}}%</td>
-                    <td>{{subjectData.testScore + subjectData.examScore >= 70? 'A' : subjectData.testScore + subjectData.examScore >= 60? 'B': subjectData.testScore + subjectData.examScore >= 50? 'C': subjectData.testScore + subjectData.examScore >= 40? 'D' : 'F'}}</td>
-                </tr>
-            </table>
-            <button (click)="printResult()" class="mrg-tl btn-tables clrg clw not-print mrg-left"><i class="fa fa-print mrg-rgt"></i>Print Result</button>
+            <div class="scroll-x">
+                <table class="mrg-top">
+                    <tr>
+                        <th>No.</th>
+                        <th>Subjects</th>
+                        <th>CA (30)</th>
+                        <th>EXAM (70)</th>
+                        <th>Total (100)</th>
+                        <th>Percentage (100%)</th>
+                        <th>Grade</th>
+                    </tr>
+                    
+                    <tr *ngFor="let subjectData of studentInfo.subjectsOfferred;  index as i">
+                        <td>{{i + 1}}</td>
+                        <td>{{subjectData.subject | uppercase}}</td>
+                        <td>{{subjectData.testScore}}</td>
+                        <td>{{subjectData.examScore}}</td>
+                        <td>{{subjectData.testScore + subjectData.examScore}}</td>
+                        <td>{{subjectData.testScore + subjectData.examScore}}%</td>
+                        <td>{{subjectData.testScore + subjectData.examScore >= 70? 'A' : subjectData.testScore + subjectData.examScore >= 60? 'B': subjectData.testScore + subjectData.examScore >= 50? 'C': subjectData.testScore + subjectData.examScore >= 40? 'D' : 'F'}}</td>
+                    </tr>
+                </table>
+                <button (click)="printResult()" class="btn-tables mrg-top1 clrg clw not-print"><i class="fa fa-print mrg-rgt"></i>Print Result</button>
+            </div>
         </div>
     </div>
 </div>

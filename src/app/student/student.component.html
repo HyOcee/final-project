@@ -1,6 +1,6 @@
-<div class="bdgblu ht fonts wid-17 posfix scroll-y not-print">
-    <i class="fa fa-bars"></i>
-    <i class="fa fa-angle-down"></i>
+<div class="bdgblu ht fonts wid-17 posfix scroll-y aside-hide not-print">
+    
+    <i class="fa fa-times" (click)="toggleNav()"></i>
     <div class="pad-top pad-bottom">
         <div>
             <a routerLink="./" [queryParams]="{username: studentName}" class="flex1 pad-left pad-btm pad-top1">
@@ -23,6 +23,6 @@
     </div>
 </div>
 
-<div class="mrg-left">
+<div class="mrg-left full-width-sm">
     <router-outlet></router-outlet>
 </div>

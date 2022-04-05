@@ -15,6 +15,11 @@ export class ManageStudentsComponent implements OnInit {
 
   constructor() { }
 
+  toggleNav():void {
+    let nav = document.querySelector('.aside-hide') as unknown as any
+    nav?.classList.toggle('aside-show')
+  }
+
   ngOnInit(): void {
     let studentsFromSessionStorage = JSON.parse(sessionStorage.getItem('students')!)
     for (let klass in studentsFromSessionStorage){

@@ -1,14 +1,18 @@
 <div class="posstic bx-shw bgwht z-index-5">
-    <div class="flex2 mrg-rgt pad2 font1">
+    <div class="flex2 pad2 font1">
+        <i class="fa fa-bars nav-slide"  (click)="toggleNav()"></i>
         <div class="cir1"><i class="fa fa-user"></i></div>
         <h5 class="pad-left pad-rgt">ADMINISTRATOR</h5>
         <button routerLink="/" class="btn clrg clw">LOG OUT</button>
     </div>
 </div>
 <div class="fonts mrg-top">
-    <div class="mrg-left1 bx-shw pad1 mrg-rgt">
-        <h5>School Code</h5>
-        <h6>23456</h6>
+    <div>
+        <h4>{{school?.schoolName}}</h4>
+        <div class="mrg-left1 bx-shw pad1 mrg-rgt">
+            <h5>School Code</h5>
+            <h6>23456</h6>
+        </div>
     </div>
 
     <!--  -->

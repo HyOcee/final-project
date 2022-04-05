@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { subjectsOfferred } from 'src/app/data/subjects-and-classes';
 
 @Component({
@@ -14,6 +15,15 @@ export class AdminUploadComponent implements OnInit {
   public enrolledStudents!: any
 
   public currentSubject: any = ''
+
+  selectedSubject = new FormGroup({
+    subject: new FormControl()
+  })
+
+  getValue() {
+    let subject = this.selectedSubject.value.subject
+    this.displayStudents(subject)
+  }
 
   displayStudents(subjectRequested: any){
     this.currentSubject = subjectRequested
@@ -56,6 +66,11 @@ export class AdminUploadComponent implements OnInit {
   }
 
   constructor() { }
+
+  toggleNav():void {
+    let nav = document.querySelector('.aside-hide') as unknown as any
+    nav?.classList.toggle('aside-show')
+  }
 
   ngOnInit(): void {
     this.subjectsOfferred = subjectsOfferred

@@ -1,12 +1,13 @@
 <div class="posstic bx-shw bgwht z-index-5 not-print">
-    <div class="flex2 mrg-rgt pad2 font1">
+    <div class="flex2 pad2 font1">
+        <i class="fa fa-bars nav-slide"  (click)="toggleNav()"></i>
         <div class="cir1"><i class="fa fa-user"></i></div>
         <h5 class="pad-left pad-rgt">{{studentInfo.name}}</h5>
         <button routerLink="/" class="btn clrg clw">LOG OUT</button>
     </div>
 </div>
 
-<div class="card pd-sm scroll-y">
+<div class="card pd-sm">
     <div class="pad-btm">
         <h4 class="font1">Result Dossier</h4>
     </div>
@@ -27,7 +28,7 @@
     <div class="card mrg-top pad1">
         <div class="font1 flex">
             <h4 class="">Report Sheet</h4>
-            <button (click)="printResult()" class="mrg-left1 btn-tables clrg clw not-print"><i class="fa fa-print"></i>Print Result</button>
+            <button (click)="printResult()" class="btn-tables clrg clw not-print"><i class="fa fa-print"></i>Print Result</button>
         </div>
         <div class="font1 txt-alg">
             <div class="clrblu">
@@ -79,7 +80,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="grid mrg-top">
+            <div class="grid mrg-top scroll-x">
                 <div>
                 <table>
                     <caption>

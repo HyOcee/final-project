@@ -12,12 +12,21 @@ export class ManageTeachersComponent implements OnInit {
   
   public allTeachers: any;
   public noOfTeachers!: number
+  public school: any
 
   constructor() { }
+
+  toggleNav():void {
+    let nav = document.querySelector('.aside-hide') as unknown as any
+    nav?.classList.toggle('aside-show')
+  }
 
   ngOnInit(): void {
     this.allTeachers = getAllTeachers()
     this.noOfTeachers = this.allTeachers.length
+
+    
+    this.school = sessionStorage.getItem('teachers')
   }
 
 }

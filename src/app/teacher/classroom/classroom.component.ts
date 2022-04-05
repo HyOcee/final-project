@@ -18,6 +18,11 @@ export class ClassroomComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
 
+  toggleNav():void {
+    let nav = document.querySelector('.aside-hide') as unknown as any
+    nav?.classList.toggle('aside-show')
+  }
+
   displayStudents(subjectRequested: any){
     this.myStudents = []
     let studentsFromSessionStorage = JSON.parse(sessionStorage.getItem('students')!)
@@ -31,7 +36,6 @@ export class ClassroomComponent implements OnInit {
         }
       }
     }
-      console.log(this.myStudents)
       this.totalStudents = this.myStudents.length
   }
 

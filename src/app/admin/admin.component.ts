@@ -13,6 +13,8 @@ export class AdminComponent implements OnInit {
   public schoolManagerActive: any = false
   public resultsActive: any = false
 
+  public school: any
+
   toggleRegisterPersons(){
     if(this.registerPersonsActive === false) {
       this.registerPersonsActive = true
@@ -39,8 +41,14 @@ export class AdminComponent implements OnInit {
 
   constructor() { }
 
+  toggleNav():void {
+    let nav = document.querySelector('.aside-hide') as unknown as any
+    nav?.classList.toggle('aside-show')
+  }
+
   ngOnInit(): void {
     if(!sessionStorage.getItem('teachers')) sessionStorage.setItem('teachers',JSON.stringify(teachers))
+    this.school = sessionStorage.getItem('teachers')
   }
 
 }

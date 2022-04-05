@@ -16,6 +16,11 @@ export class TeacherComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
 
+  toggleNav():void {
+    let nav = document.querySelector('.aside-hide') as unknown as any
+    nav?.classList.toggle('aside-show')
+  }
+
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
       this.teacherName = params['username']

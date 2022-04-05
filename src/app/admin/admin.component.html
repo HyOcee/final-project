@@ -1,6 +1,5 @@
-<div class="bdgblu ht fonts wid-17 posfix scroll-y">
-    <i class="fa fa-bars"></i>
-    <i class="fa fa-angle-down"></i>
+<div class="bdgblu ht fonts wid-17 posfix scroll-y aside-hide">
+    <i class="fa fa-times" (click)="toggleNav()"></i>
     <div class="pad-top pad-bottom">
         <div>
             <a routerLink="./" class="flex1 pad-left pad-btm  pad-top1">
@@ -8,7 +7,7 @@
                 <span class="dis">Dashboard</span>
             </a>
         </div>
-        <div (click)="toggleRegisterPersons()">
+        <div (click)="toggleRegisterPersons()" class="random">
             <a class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-school"></i>
                 <span class="mrglef dis">School Manager</span>
@@ -28,7 +27,7 @@
                 <span class="mrglef dis">Student Registration</span>
             </a>
         </div>
-        <div (click)="toggleSchoolManagerActive()">
+        <div (click)="toggleSchoolManagerActive()" class="random">
             <a  class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-user-edit"></i>
                 <span class="mrglef dis">User Manager</span>
@@ -48,7 +47,7 @@
                 <span class="mrglef dis">Manage Students</span>
             </a>
         </div>
-        <div (click)="toggleResultsActive()">
+        <div (click)="toggleResultsActive()" class="random">
             <a class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Results</span>
@@ -83,6 +82,18 @@
         </div>
     </div>
 </div>
-<div class="mrg-left">
+<div class="mrg-left full-width-sm">
+    <div class="center">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
     <router-outlet></router-outlet>
 </div>

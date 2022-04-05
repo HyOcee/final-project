@@ -43,6 +43,11 @@ export class CreateStudentComponent implements OnInit {
 
   constructor(private fb: FormBuilder) { }
 
+  toggleNav():void {
+    let nav = document.querySelector('.aside-hide') as unknown as any
+    nav?.classList.toggle('aside-show')
+  }
+
   ngOnInit(): void {
 
     if(!sessionStorage.getItem('students')){

@@ -19,6 +19,11 @@ export class StudentResultComponent implements OnInit {
     window.print()
   }
 
+  toggleNav():void {
+    let nav = document.querySelector('.aside-hide') as unknown as any
+    nav?.classList.toggle('aside-show')
+  }
+
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {

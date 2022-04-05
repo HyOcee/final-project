@@ -37,6 +37,11 @@ export class AdminCreateProfilesComponent implements OnInit {
     this.registerTeacherForm.reset()
   }
 
+  toggleNav():void {
+    let nav = document.querySelector('.aside-hide') as unknown as any
+    nav?.classList.toggle('aside-show')
+  }
+
   constructor(private elRef: ElementRef, private renderer:Renderer2) { }
 
   ngOnInit(): void {

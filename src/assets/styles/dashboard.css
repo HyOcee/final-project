@@ -136,6 +136,7 @@
 
 .wid-17 {
     width: 17%;
+    min-width: 200px;
 }
 
 .wid{
@@ -195,6 +196,18 @@ a{
     position:fixed;
 }
 
+.aside-hide {
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.aside-hide .fa-times {
+    position: absolute;
+    right: 15%;
+    font-size: large;
+    top: 5%;
+}
+
 .posstic{
     position:sticky;
     top:0;
@@ -210,6 +223,10 @@ a{
     left:0;
     font-size: 1rem;
     transform: translateX(-60%);
+}
+
+.nav-slide {
+    display: none;
 }
 
 .bx-shw{
@@ -363,7 +380,121 @@ button:focus {
     border-left: solid 0.2rem rgb(36, 35, 35);
 }
 
+.loader-animation-1 {
+    transform: scale(1);
+    animation-name: animation-1;
+    animation-duration: 1s;
+}
 
+@keyframes animation-1 {
+    0% {
+        transform: scale(0)
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.loader-animation-2 {
+    width: auto;
+    height: auto;
+    animation-name: animation-1;
+    animation-duration: 1s;
+}
+
+@keyframes animation-2 {
+    0% {
+        width: 0;
+        height: 0;
+    }
+
+    100% {
+        width: auto;
+        height: auto;
+    }
+}
+
+.random > a {
+    position: relative;
+}
+
+.random > a i:not(:first-child) {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-15%);
+}
+
+.center {
+    height: 100vh;
+    /* position: inherit; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    display: none;
+    animation-name: center;
+    animation-duration: 2s;
+  }
+
+  @keyframes center {
+      0% {
+          display: block;
+      }
+
+      100% {
+          display: none;
+      }
+  }
+
+  .wave {
+    width: 5px;
+    height: 100px;
+    background: linear-gradient(45deg, cyan, #fff);
+    margin: 10px;
+    animation: wave 1s linear infinite;
+    border-radius: 20px;
+  }
+  .wave:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .wave:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .wave:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  .wave:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  .wave:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+  .wave:nth-child(7) {
+    animation-delay: 0.6s;
+  }
+  .wave:nth-child(8) {
+    animation-delay: 0.7s;
+  }
+  .wave:nth-child(9) {
+    animation-delay: 0.8s;
+  }
+  .wave:nth-child(10) {
+    animation-delay: 0.9s;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
 
 @media screen and (max-width:1024px){
 
@@ -402,6 +533,23 @@ button:focus {
     
 } 
 
-@media only screen and (max-width: 950px) {
-    
+@media only screen and (max-width: 1024px) {
+    .aside-hide {
+        /* display: none; */
+        transform: translateX(-100%);
+    }
+
+    .aside-show {
+        transform: translateX(0);
+    }
+
+    .nav-slide {
+        position: absolute;
+        left: 2.5%;
+        display: block;
+    }
+
+    .full-width-sm {
+        margin-left: 0 !important;
+    }
 }
