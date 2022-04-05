@@ -23,6 +23,8 @@ import { AdminBroadsheetComponent } from './admin/admin-broadsheet/admin-broadsh
 import { AdminUploadComponent } from './admin/admin-upload/admin-upload.component';
 import { AdminReportComponent } from './admin/admin-report/admin-report.component';
 import { OverviewComponent } from './teacher/overview/overview.component';
+import { TechyComponent } from './techy/techy.component';
+import { PaymentmodelComponent } from './paymentmodel/paymentmodel.component';
 
 const routes: Routes = [
   {
@@ -62,7 +64,10 @@ const routes: Routes = [
       {path: 'profile', component: StudentProfileComponent},
       {path: 'report-card', component: ReportCardComponent}
     ]
-  }
+  },
+  {path: 'techy', component: TechyComponent},
+  {path: 'payment', component: PaymentmodelComponent}
+  
 ];
 
 @NgModule({

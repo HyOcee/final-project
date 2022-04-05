@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.clrblu{
+    background-color: #155244;
+    color:white;
+    border-radius: 10px 10px 0 0;
+    padding:10px 15px;
+}
+
+.ht{
+    height:5vh;
+}
+
+.ht1{
+    height:20vh;
+}
+
+.flex{
+    display: flex;
+    gap:1%;
+}
+
+.cir{
+    width: 15px;
+    height: 15px;
+    border-radius:25px;
+    background-color:red;
+
+}
+
+.cir1{
+    width: 15px;
+    height: 15px;
+    border-radius: 25px;
+    background-color: yellow;
+
+}
+
+.cir2{
+    width: 15px;
+    height: 15px;
+    border-radius: 25px;
+    background-color:yellowgreen;
+
+}
+
+.track{
+    margin-top: 10px;
+    background-color: #155244;
+    color: white;
+}
+
+.bg{
+    background-image:linear-gradient(to bottom, rgba(21,82,68, 0.7), rgba(11, 53, 53, 0.8)), url(/assets/img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.headname{
+    display: block;
+    font-size: 30px;
+    /* font-weight: 200; */
+    line-height: 2;
+    text-align: center;
+}
+
+.headsub{
+    display: block;
+    /* font-size: 20px; */
+    text-align: center;
+}
+
+.posrel{
+    position:relative;
+}
+
+.text-box{
+    position: absolute;
+    top:10%;
+    left: 45%;
+    /* transform: translate(-50%, -50%); */
+}
+
+.card{
+    background-color: #155244;
+    color: white;
+}
+
+.card{
+    background-color: #155244;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    min-width: 300px;
+    height: 100px;
+}
+
+.card1{
+    background-color: yellowgreen;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    min-width: 300px;
+    height: 100px;
+
+}
+
+.card2{
+    background-color: red;
+    color: white;
+    padding:10px;
+    text-align: center;
+    min-width: 300px;
+    height: 100px;
+}
+
+.flex1{
+    display:flex;
+    gap:7%;
+    margin:2% 10%;
+    /* max-width:120px */
+}
+
+.flex2{
+    display:flex;
+    gap:20%;
+    margin:4% 20%;
+}
+
+.br{
+    /* border:1px solid black;*/
+    box-shadow: 3px 2px 15px rgb(77, 75, 75);
+    /* background-color: red; */
+    padding: 2%;
+    /* width:100%; */
+}
+
+.box{
+    position: absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn{
+    background-color: rgb(41, 110, 46);
+    color: white;
+    border-radius: 5px;
+    border:none;
+    min-width: 100px;
+    padding: 7px;
+}
+
+.btn1{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border:none;
+    min-width: 100px;
+    padding: 7px;
+}
+
+/* .br:hover{
+    transition: ;
+} */

@@ -30,6 +30,7 @@ import { AdminUploadComponent } from './admin/admin-upload/admin-upload.componen
 import { AdminReportComponent } from './admin/admin-report/admin-report.component';
 import { OverviewComponent } from './teacher/overview/overview.component';
 import { TechyComponent } from './techy/techy.component';
+import { PaymentmodelComponent } from './paymentmodel/paymentmodel.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { TechyComponent } from './techy/techy.component';
     AdminUploadComponent,
     AdminReportComponent,
     OverviewComponent,
-    TechyComponent
+    TechyComponent,
+    PaymentmodelComponent
   ],
   imports: [
     BrowserModule,

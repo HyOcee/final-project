@@ -3,24 +3,10 @@
     font-size: 32px;
 }
 
-.bckimg{
-    background-image: url("/assets/img/img1.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* height: 70vh; */
-}
-
-.cld{
-    text-decoration: none;
-    color:red;
-}
-
 header {
     padding: 5% 7.5%;
     position: relative;
     min-height: 100vmin;
-    overflow-x: hidden;
 }
 
 header h1 {font-size: 40px;}
@@ -41,19 +27,15 @@ header button {
     width: 35%;
 }
 
-.m-btm {
-    margin-bottom: 20px;
+.home-cont .m-btm {
+    margin-bottom: 22px;
 }
 
 button {
     cursor: pointer;
     border-radius: 5px;
     border: 0;
-    padding: 14px;
-}
-
-button:disabled {
-    background-color: rgb(73, 73, 77);
+    padding: 18px;
 }
 
 .fit-content {
@@ -62,15 +44,11 @@ button:disabled {
 
 .form-div {
     padding: 2.5%;
-    background-color: #a5c7a3b6;
+    background-color: #eeffed;
 }
 
-button:focus:not(:disabled), button:hover:not(:disabled) {
+button:focus, button:hover {
     outline: 2px solid rgb(0 44 76);
-}
-
-input[type='radio'],input[type='checkbox'] {
-    cursor: pointer;
 }
 
 input, textarea {
@@ -79,7 +57,7 @@ input, textarea {
     border: rgb(149 149 149) 1px solid;
 }
 
-input:not(:last-child, [type='radio'], [type='checkbox']), textarea:not(:last-child),
+input:not(:last-child), textarea:not(:last-child),
 form button:not(:last-child) {
     margin-bottom: 20px;
 }
@@ -88,47 +66,15 @@ input:focus, textarea:focus {
     outline: rgb(0 44 76) 1px solid;
 }
 
-::placeholder {
-    font-size: 14px;
-}
-
 form {
-    font-size: 14px;
     display: flex;
     flex-direction: column;
-}
-
-.sm-inputs-div {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.lg-inputs-div:not(:last-child) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-}
-
-.lg-inputs-div input {
-    width: 47.5%;
-    margin-bottom: 0 !important;
 }
 
 .anchor-like {
     color: blue;
 }
 
-.moveX {
-    animation-name: homeAnimation;
-    animation-duration: 0.5s;
-}
-
-@keyframes homeAnimation {
-    0% {transform: translateX(1000px);}
-    100% {transform: translateX(0);}
-}
 
 @media only screen and (max-width: 1320px) {
     header h1 {font-size: 30px;}
