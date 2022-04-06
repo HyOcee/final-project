@@ -14,15 +14,19 @@ import { Router } from '@angular/router';
 export class SignUpFormComponent implements OnInit {
 
   RegistrationData = new FormGroup({
-    nameOfSchool: new FormControl(),
+    schoolName: new FormControl(),
     username: new FormControl(),
-    password: new FormControl()
+    schoolID: new FormControl()
   })
 
   registerSchool(event: any){
     event.preventDefault()
     if (!this.RegistrationData.value.username) this.RegistrationData.value.username = 'rochester'
-    this.router.navigate(['admin',this.RegistrationData.value.username])
+    sessionStorage.setItem('schools',JSON.stringify(this.RegistrationData.value))
+    console.log(this.RegistrationData.value)
+
+    let payment = document.querySelector('.payment') as unknown as any
+    payment.style.display = 'block'
   }
 
   constructor(private router: Router) { }

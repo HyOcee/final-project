@@ -3,18 +3,55 @@
     <h1 class="m-btm">School Registration</h1>
     <form [formGroup]="RegistrationData" (ngSubmit)="registerSchool($event)">
         <div class="lg-inputs-div">
-            <input formControlName="nameOfSchool" type="text" placeholder="Name of School">
-            <input formControlName="username" type="text" placeholder="School ID">
+            <input formControlName="schoolName" type="text" placeholder="Name of School">
+            <input formControlName="schoolID" type="text" placeholder="School ID">
         </div>
         <div class="lg-inputs-div">
-            <input formControlName=" schooladmin" type="text" placeholder="Username">
-            <input formControlName="username" type="text" placeholder="School Address">
+            <input formControlName="username" type="text" placeholder="Username">
+            <input  type="text" placeholder="School Address">
         </div>
         <div class="lg-inputs-div">
             <input type="text" placeholder="email">
-            <input formControlName="password" type="password" placeholder="Password">
+            <input type="password" placeholder="Password">
         </div>        
         <button class="orange-bg white">Register</button>
         <div class="c-pointer">Have an account? <span routerLink="/" class="anchor-like">Login</span></div>
     </form>
+</div>
+
+<div class="model grin payment">
+    <div class='grin1 model1'>
+        <div>
+            <div class="flex">
+                <div>
+                    <input type="radio" id="pay" name="payment" value="paypall">
+                    <label for="pay">PayPal</label>
+                </div>
+                <div class=wt2>
+                    <img src="/assets/img/paypal.jpg" class="wt">
+                </div>
+            </div>
+               <hr>
+               <div class="flex pd-tp">
+                    <div>
+                    <input type="radio" id="card" name="payment" value="paypall">
+                    <label for="card">Debit/credit card</label>
+                    </div>
+                    <div class="wt2">
+                    <img src="/assets/img/card.png" class="wt">
+                    </div>
+            </div>
+        </div>
+        <br>
+        <div class="lit-gr">
+            <div class="flex"><h4>Card number</h4><input type="number" placeholder="444 111 222 333"></div>
+            <hr>
+            <br>
+            <div class="flex">
+                <div class="flex1"><h4>Expiry</h4><input type="number" placeholder="MM/YY"></div>
+                <div class="flex1"><h4>CVV</h4><input type="number" placeholder="123"></div>
+            </div>
+        </div>
+    </div>
+    <button class="btn" routerLink="/">Finish and Pay</button>
 </div>

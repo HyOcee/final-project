@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.payment {
+    display: none;
+    transform: translateY(0);
+    animation-name: payment;
+    animation-duration: 0.5s;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@keyframes payment {
+    0% {
+        transform: translate(-50%,-200%);
+    }
+
+    100% {
+        transform: translate(-50%,-50%);
+    }
+}
+
+
+.payment .model{
+    width: 20%;
+    min-width: 300px;
+    /* height: 60vh; */
+    margin: 10%;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.model1{
+    border-radius: 5px;
+    padding: 10%;
+}
+
+.wt2{
+    width: 20%;
+}
+.wt{
+    width: 100%;
+}
+
+.grin{
+    background-color: rgb(5, 56, 45);
+    color: white;
+}
+
+.grin1{
+    background-color: rgb(13, 105, 85);
+    color: white;
+}
+
+.payment .btn{
+    width: 100%;
+    padding: 2%;
+    border:none;
+    margin-top: 2%;
+    background-color: rgb(69, 155, 135);
+    color: white;
+    border-radius: 5px;
+}
+
+.payment .flex{
+    display: flex;
+    justify-content: space-between;
+    gap:10%;
+}
+
+.payment input{
+    background-color: inherit;
+    border: 0;
+    /* border-bottom:2px solid white; */
+}
+
+.pd-tp{
+    padding-top: 2%;
+}
+
+.flex1{
+    display:flex;
+    flex-direction: column;
+    border-bottom: 1px solid white;;
+}
