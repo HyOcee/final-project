@@ -196,7 +196,11 @@ button.not-print {
     gap: 5%;
 }
 
-div>a:hover{
+div>a:not(.no-hover):hover{
+    background-color:#28947b;
+}
+
+.active-link {
     background-color:#28947b;
 }
 
@@ -450,31 +454,37 @@ button:focus {
 }
 
 .center {
-    height: 100vh;
-    /* position: inherit; */
+    left: 17%;
+    top: 0;
+    bottom: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #000;
-    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: -5;
+    opacity: 0;
     animation-name: center;
     animation-duration: 2s;
   }
 
   @keyframes center {
       0% {
-          display: block;
+          z-index: 20;
+          opacity: 1;
       }
 
       100% {
-          display: none;
+          z-index: -5;
+          opacity: 0;
       }
   }
 
   .wave {
     width: 5px;
     height: 100px;
-    background: linear-gradient(45deg, cyan, #fff);
+    background:  #155244;
     margin: 10px;
     animation: wave 1s linear infinite;
     border-radius: 20px;
@@ -557,6 +567,10 @@ button:focus {
 } 
 
 @media only screen and (max-width: 1024px) {
+    .center {
+        left: 0;
+    }
+
     .aside-hide {
         /* display: none; */
         transform: translateX(-100%);

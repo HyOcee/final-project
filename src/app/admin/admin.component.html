@@ -2,13 +2,13 @@
     <i class="fa fa-times" (click)="toggleNav()"></i>
     <div class="pad-top pad-bottom">
         <div>
-            <a routerLink="./" (click)="toggleNav()" class="flex1 pad-left pad-btm  pad-top1">
+            <a routerLink="./" routerLinkActive="active-link" (click)="toggleNav()" class="flex1 pad-left pad-btm  pad-top1">
                 <i class="fa fa-dashboard"></i>
                 <span class="dis">Dashboard</span>
             </a>
         </div>
-        <div (click)="toggleRegisterPersons()" class="random">
-            <a class="flex1 pad-left pad-btm pad-top1">
+        <div (click)="toggleRegisterPersons()" class="random c-pointer">
+            <a class="flex1 pad-left pad-btm pad-top1 no-hover">
                 <i class="fas fa-school"></i>
                 <span class="mrglef dis">Registration</span>
                 <i *ngIf="!registerPersonsActive" class="fa fa-angle-right"></i>
@@ -16,19 +16,19 @@
             </a>
         </div>
         <div *ngIf="registerPersonsActive">
-            <a routerLink="create-profile" (click)="toggleNav()" class="flex1 pad-left pad-btm pad-top1">
+            <a routerLink="create-profile" routerLinkActive="active-link" (click)="toggleNav()" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Teacher Registration</span>
             </a>
         </div>
         <div *ngIf="registerPersonsActive">
-            <a routerLink="register-student" (click)="toggleNav()" class="flex1 pad-left pad-btm pad-top1">
+            <a routerLink="register-student" routerLinkActive="active-link" (click)="toggleNav()" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Student Registration</span>
             </a>
         </div>
-        <div (click)="toggleSchoolManagerActive()" class="random">
-            <a  class="flex1 pad-left pad-btm pad-top1">
+        <div (click)="toggleSchoolManagerActive()" class="random c-pointer">
+            <a  class="flex1 pad-left pad-btm pad-top1 no-hover">
                 <i class="fas fa-user-edit"></i>
                 <span class="mrglef dis">User Manager</span>
                 <i *ngIf="!schoolManagerActive" class="fa fa-angle-right"></i>
@@ -36,19 +36,19 @@
             </a>
         </div>
         <div *ngIf="schoolManagerActive">
-            <a routerLink="teachers" (click)="toggleNav()" class="flex1 pad-left pad-btm pad-top1">
+            <a routerLink="teachers" routerLinkActive="active-link" (click)="toggleNav()" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Manage Teachers</span>
             </a>
         </div>
         <div *ngIf="schoolManagerActive">
-            <a routerLink="students" (click)="toggleNav()" class="flex1 pad-left pad-btm pad-top1">
+            <a routerLink="students" routerLinkActive="active-link" (click)="toggleNav()" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Manage Students</span>
             </a>
         </div>
-        <div (click)="toggleResultsActive()" class="random">
-            <a class="flex1 pad-left pad-btm pad-top1">
+        <div (click)="toggleResultsActive()" class="random c-pointer">
+            <a class="flex1 pad-left pad-btm pad-top1 no-hover">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Results</span>
                 <i *ngIf="!resultsActive" class="fa fa-angle-right"></i>
@@ -62,7 +62,7 @@
             </a>
         </div>
         <div *ngIf="resultsActive">
-            <a routerLink="upload" (click)="toggleNav()" class="flex1 pad-left pad-btm pad-top1">
+            <a routerLink="upload" routerLinkActive="active-link" (click)="toggleNav()" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Upload Score</span>
             </a>
@@ -75,7 +75,7 @@
         </div> 
         
         <div>
-            <a (click)="toggleNav()" class="flex1 pad-left pad-btm pad-top1">
+            <a (click)="toggleNav()" class="flex1 c-pointer pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">View Profile</span>
             </a>
@@ -83,17 +83,6 @@
     </div>
 </div>
 <div class="mrg-left full-width-sm">
-    <div class="center">
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-      </div>
+    
     <router-outlet></router-outlet>
 </div>
