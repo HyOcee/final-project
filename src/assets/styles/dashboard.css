@@ -598,11 +598,14 @@ button:focus {
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 850px) {
+    .d-block-md {
+        display: block;
+    }
 
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 750px) {
     .d-block-sm {
         display: block;
     }
@@ -610,5 +613,6 @@ button:focus {
     .d-block-sm > div {
         margin: 1rem auto;
         width: 80%;
+        max-width: 400px;
     }
 }

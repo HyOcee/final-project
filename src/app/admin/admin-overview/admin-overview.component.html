@@ -55,7 +55,7 @@
     </div>
 
     <!--  -->
-    <div class="grid pad-top1 fonts pad">
+    <div class="grid pad-top1 fonts pad d-block-md">
         <div>
             <div class="card pad1">
                 <div>
@@ -186,77 +186,3 @@
             </div>
         </div>
 </div>
-
-<script>
-    console.log(0)
-    anychart.onDocumentReady(function () {
-        // create data set on our data
-        var dataSet = anychart.data.set([
-            ["SS1", 700, 650],
-            ["SS2", 500, 350],
-            ["SS3", 400, 750]
-        ]);
-
-        // map data for the first series, take x from the zero column and value from the first column of data set
-        var seriesData_1 = dataSet.mapAs({ 'x': 0, 'value': 1 });
-
-        // map data for the second series, take x from the zero column and value from the second column of data set
-        var seriesData_2 = dataSet.mapAs({ 'x': 0, 'value': 2 });
-
-        // // map data for the third series, take x from the zero column and value from the third column of data set
-        // var seriesData_3 = dataSet.mapAs({'x': 0, 'value': 3});
-
-        // // map data for the fourth series, take x from the zero column and value from the fourth column of data set
-        // var seriesData_4 = dataSet.mapAs({'x': 0, 'value': 4});
-
-        // create bar chart
-        var chart = anychart.column();
-
-        // turn on chart animation
-        chart.animation(true);
-
-        // set container id for the chart
-        chart.container('container');
-        chart.padding([10, 40, 5, 20]);
-
-        // set scale minimum
-        chart.yScale().minimum(0);
-
-        // force chart to stack values by Y scale.
-        chart.yScale().stackMode('value');
-
-        chart.yAxis().labels().format(function () {
-            return this.value.toLocaleString();
-        });
-
-        // set titles for axises
-        chart.xAxis().title('Classes');
-        chart.yAxis().title('Number of Students');
-
-        // helper function to setup label settings for all series
-        var setupSeriesLabels = function (series, name) {
-            series.name(name);
-            // series.tooltip().valuePrefix('$');
-            series.stroke('5 #fff 1');
-            series.hovered().stroke('3 #fff 1');
-        };
-
-        // temp variable to store series instance
-        var series;
-
-        // create first series with mapped data
-        series = chart.column(seriesData_1);
-        setupSeriesLabels(series, 'Male');
-
-        // create second series with mapped data
-        series = chart.column(seriesData_2);
-        setupSeriesLabels(series, 'Female');
-
-        // turn on legend
-        chart.legend().enabled(true).fontSize(13).padding([0, 0, 20, 0]);
-        chart.interactivity().hoverMode('by-x');
-        chart.tooltip().displayMode('union');
-        // initiate chart drawing
-        chart.draw();
-    });
-</script>
