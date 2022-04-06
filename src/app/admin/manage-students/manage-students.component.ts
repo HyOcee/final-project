@@ -28,7 +28,6 @@ export class ManageStudentsComponent implements OnInit {
         this.total++;
       }
     }
-    console.log(this.allStudents)
   }
 
 }

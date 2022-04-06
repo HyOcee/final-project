@@ -1,8 +1,8 @@
-<div class="posstic bx-shw bgwht">
+<div class="posstic bx-shw bgwht z-index-5">
     <div class="flex2 pad2 font1">
         <i class="fa fa-bars nav-slide"  (click)="toggleNav()"></i>
         <div class="cir1"><i class="fa fa-user"></i></div>
-        <h5 class="pad-left pad-rgt">IYANG UKEME</h5>
+        <h5 class="pad-left pad-rgt">{{teacherInfo.name | titlecase}}</h5>
         <button routerLink="/" class="btn clrg clw">LOG OUT</button>
     </div>
 </div>
@@ -19,17 +19,16 @@
     <div class="wave"></div>
     <div class="wave"></div>
   </div>
-  
+
 <div class="fonts mrg-top">
     <div class="mrg-left1 bx-shw pad1 mrg-rgt">
         <h5>School Code</h5>
         <h6>23456</h6>
     </div>
-    <div class="flex">
+    <div class="flex  pad space-a d-block-sm">
         <div class="carData">
-            <h3>Subject Assigned</h3>
-            <p>Accounting</p>
-            <p>Book-keeping</p>
+            <h3>Subject(s) Assigned</h3>
+            <p *ngFor="let subject of teacherInfo.subjects">{{subject}}</p>
         </div>
         <div class="carData2">
             <h3>Total No. of Students</h3>
@@ -65,11 +64,14 @@
             </div>
             <div class="card mrg-top pad1">
                 <div>
-                    <h4>STUDENT EMROLLEMENT ANALYSIS (YEAR/TERM)</h4>
+                    <h4 class="m-btm">STUDENTS PERFORMANCE INDEX</h4>
+                </div>
+                <div class="show-buttons">
+                    <button *ngFor="let subject of teacherInfo.subjects" (click)="displayStudents(subject)">{{subject}}</button>
                 </div>
                 <div class="card mrg-top1">
                     <div id="container">
-                        <!-- <h5>CHART</h5> -->
+                        <canvas id="myChart" ></canvas>
                     </div>
                 </div>
             </div>
@@ -86,25 +88,10 @@
                             <th>Subject</th>
                             <th>Reg Students </th>
                         </thead>
-                        <tr>
+                        <tr *ngFor="let subject of teacherInfo.subjects">
                             <td>Senior Secondary School, Bussiness SSS1A</td>
-                            <td>Accounting</td>
+                            <td>{{subject | titlecase}}</td>
                             <td>69</td>
-                        </tr>
-                        <tr>
-                            <td>Senior Secondary School, Bussiness SSS1B</td>
-                            <td>Book-Keeping</td>
-                            <td>59</td>
-                        </tr>
-                        <tr>
-                            <td>Senior Secondary School, Bussiness SSS1B</td>
-                            <td>Accounting</td>
-                            <td>72</td>
-                        </tr>
-                        <tr>
-                            <td>Senior Secondary School, Bussiness SSS2A</td>
-                            <td>Accounting</td>
-                            <td>50</td>
                         </tr>
                     </table>
                 </div>

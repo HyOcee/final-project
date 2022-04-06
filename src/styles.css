@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Poppins&family=Redressed&display=swap');
+
 html{
     font-size: 10px;
 }
@@ -14,7 +16,7 @@ html{
 }
 
 body{
-    font-family: Poppins;
+    font-family: 'Manrope', sans-serif;
 }
 
 .c-pointer {cursor: pointer;}
@@ -22,6 +24,10 @@ body{
 ::-webkit-scrollbar{
     width: 8px;
     height: 8px;
+  }
+
+  .m-btm {
+      margin-bottom: 1rem;
   }
 
 ::-webkit-scrollbar-thumb {
