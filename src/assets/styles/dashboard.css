@@ -3,6 +3,10 @@
     color:#fff;
 }
 
+.c-green {
+    color: #155244;
+}
+
 button.not-print {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -581,7 +585,11 @@ button:focus {
     }
 }
 
-@media only screen and (max-width: 4800px) {
+@media only screen and (max-width: 750px) {
+
+}
+
+@media only screen and (max-width: 480px) {
     .d-block-sm {
         display: block;
     }

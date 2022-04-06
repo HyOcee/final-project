@@ -14,7 +14,7 @@
 
     <div class="personnel-container">
         
-        <div *ngFor="let student of allStudents" class="profile-card">
+        <div *ngFor="let student of allStudents" class="profile-card ">
             <img src="https://cdn.vectorstock.com/i/1000x1000/67/73/green-check-mark-and-red-cross-icon-set-approved-vector-26936773.webp" alt="">
             <div>
                 <h4>Name: {{student.name}}</h4>
@@ -22,7 +22,7 @@
                 <p>Bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis.</p>
             </div>
 
-            <i routerLink="/student" [queryParams]="{username: student.username}" class="fas fa-qrcode"></i>
+            <i routerLink="/student" [queryParams]="{username: student.username}" class="fas fa-qrcode c-green"></i>
         </div>
     </div>
 </div>
