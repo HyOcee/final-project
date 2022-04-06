@@ -105,7 +105,7 @@ form.registration button.submit {
     margin: 0 0 2rem;
 }
 
-.show-buttons button, .submit-results {
+.show-buttons button, .submit-results,.upload-buttons {
     display: inline-block;
     margin: 0 1rem;
     font-size: 1.4rem;
@@ -114,6 +114,10 @@ form.registration button.submit {
     border: #155244 1px solid;
     padding: 1.2rem 1.8rem;
     border-radius: 5px;
+}
+
+.upload-buttons {
+    margin-top: 1.5rem;
 }
 
 .submit-results {
