@@ -16,6 +16,8 @@ export class AdminComponent implements OnInit {
   public school: any
 
   toggleRegisterPersons(){
+    this.schoolManagerActive = false
+    this.resultsActive = false
     if(this.registerPersonsActive === false) {
       this.registerPersonsActive = true
     } else {
@@ -24,6 +26,8 @@ export class AdminComponent implements OnInit {
   }
 
   toggleSchoolManagerActive(){
+    this.registerPersonsActive = false
+    this.resultsActive = false
     if(this.schoolManagerActive === false) {
       this.schoolManagerActive = true
     } else {
@@ -32,6 +36,8 @@ export class AdminComponent implements OnInit {
   }
 
   toggleResultsActive(){
+    this.schoolManagerActive = false
+    this.registerPersonsActive = false
     if(this.resultsActive === false) {
       this.resultsActive = true
     } else {

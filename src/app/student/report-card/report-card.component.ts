@@ -13,6 +13,7 @@ export class ReportCardComponent implements OnInit {
 
   public studentInfo: any
   public studentName: any
+  public school: any
 
   public marksObtainable: number = 0
   public marksObtained: number = 0
@@ -29,6 +30,7 @@ export class ReportCardComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.school = JSON.parse(sessionStorage.getItem('schools')!)
     this.route.queryParams.subscribe(params => {
       this.studentName = params['username']
     })

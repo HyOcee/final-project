@@ -3,6 +3,16 @@
     color:#fff;
 }
 
+button.not-print {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.dash-school-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 .scroll-y {
     overflow-y: auto;
 }
@@ -84,7 +94,7 @@
 }
 
 .pad-btm{
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 .pad{
@@ -136,7 +146,6 @@
 
 .wid-17 {
     width: 17%;
-    min-width: 200px;
 }
 
 .wid{
@@ -206,6 +215,7 @@ a{
     right: 15%;
     font-size: large;
     top: 5%;
+    display: none;
 }
 
 .posstic{
@@ -242,7 +252,6 @@ a{
 .carData{
     background-color:#28947b;
     color:white;
-    margin-left:7%;
     border-radius: 10px;
     padding: 2%;
 }
@@ -250,7 +259,6 @@ a{
 .carData1{
     background-color:rgb(182, 59, 59);
     color:white;
-    margin-left:7%;
     border-radius: 10px;
     padding: 2%;
     min-width:10%;
@@ -259,7 +267,6 @@ a{
 .carData2{
     background-color:orange;
     color:white;
-    margin-left:7%;
     border-radius: 10px;
     padding: 2%;
     min-width:10%,
@@ -282,6 +289,18 @@ select{
 .flex{
     display:flex;
     align-content: space-between;
+}
+
+.space-b {
+    justify-content: space-between;
+}
+
+.space-a {
+    justify-content: space-around;
+}
+
+.align-c {
+    align-items: center;
 }
 
 .flex2{
@@ -421,9 +440,9 @@ button:focus {
 
 .random > a i:not(:first-child) {
     position: absolute;
-    right: 5%;
+    right: 10%;
     top: 50%;
-    transform: translateY(-15%);
+    transform: translateY(-50%);
 }
 
 .center {
@@ -539,6 +558,14 @@ button:focus {
         transform: translateX(-100%);
     }
 
+    .wid-17 {
+        min-width: 220px;
+    }
+
+    .aside-hide .fa-times {
+        display: block;
+    }
+
     .aside-show {
         transform: translateX(0);
     }
@@ -551,5 +578,16 @@ button:focus {
 
     .full-width-sm {
         margin-left: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 4800px) {
+    .d-block-sm {
+        display: block;
+    }
+
+    .d-block-sm > div {
+        margin: 1rem auto;
+        width: 80%;
     }
 }

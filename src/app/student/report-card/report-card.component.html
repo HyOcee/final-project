@@ -2,47 +2,29 @@
     <div class="flex2 pad2 font1">
         <i class="fa fa-bars nav-slide"  (click)="toggleNav()"></i>
         <div class="cir1"><i class="fa fa-user"></i></div>
-        <h5 class="pad-left pad-rgt">{{studentInfo.name}}</h5>
+        <h5 class="pad-left pad-rgt">{{studentInfo.name | titlecase}}</h5>
         <button routerLink="/" class="btn clrg clw">LOG OUT</button>
     </div>
 </div>
 
-<div class="card pd-sm">
-    <div class="pad-btm">
-        <h4 class="font1">Result Dossier</h4>
-    </div>
-    <div>
-        <div class="font2 mrg-top1">
-            <p>Registered Session Term</p>
-        </div>
-        <div class="bdr flex mrg-top1">
-            <div class="wid1"><h2>Select Term:</h2></div>
-                <select class="wid2">
-                    <option value="0">Select Term</option>
-                    <option value="1">2021/2022 - First Term</option>
-                    <option value="1">2021/2022 - Second Term</option>
-                    <option value="1">2021/2022 - Third Term</option>
-                </select>
-        </div>
-    </div>
+<div class="card pd-sm">    
     <div class="card mrg-top pad1">
-        <div class="font1 flex">
+        <div class="font1 flex space-b align-c">
             <h4 class="">Report Sheet</h4>
             <button (click)="printResult()" class="btn-tables clrg clw not-print"><i class="fa fa-print"></i>Print Result</button>
         </div>
         <div class="font1 txt-alg">
             <div class="clrblu">
                 <img src="/assets/img/round-track-icon.png" class="wid1">
-                <h2>CITY MODEL GROUP OF SCHOOL</h2>
+                <h2>{{school.schoolName | uppercase}}</h2>
             </div>
-            <p>MINISTRY OF EDUCATION</p>
         </div>
         <div class="pad-top1 font1">
             <div class="txt-alg">
                 <p class="und">SSS1 2021/2022 - First Term</p>
             </div>
             <div class="pad-top1">
-                <p>Name of Student: <span class="fontwht">{{studentInfo.name}}</span></p>
+                <p>Name of Student: <span class="fontwht">{{studentInfo.name | uppercase}}</span></p>
             </div>
             <div>
                 <p>Student Class: <span class="fontwht">{{studentInfo.class | uppercase}}</span></p>
@@ -61,7 +43,7 @@
                     <tr>
                         <td></td>
                         <th>Marks Obtainable</th>
-                        <th *ngFor="let subject of studentInfo.subjectsOfferred">{{subject.subject}}</th>
+                        <th *ngFor="let subject of studentInfo.subjectsOfferred">{{subject.subject | titlecase}}</th>
                     </tr>
                     <tr>
                         <th>Continous Assesment</th>

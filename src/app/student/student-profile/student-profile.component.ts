@@ -13,6 +13,7 @@ import { getStudentInfo} from 'src/app/data/get-data';
 export class StudentProfileComponent implements OnInit {
   public studentInfo: any
   public studentName: any
+  public school: any
 
   constructor(private route: ActivatedRoute) { }
 
@@ -22,6 +23,7 @@ export class StudentProfileComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.school = JSON.parse(sessionStorage.getItem('schools')!)
     this.route.queryParams.subscribe(params => {
       this.studentName = params['username']
     })

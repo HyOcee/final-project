@@ -2,7 +2,7 @@
     <i class="fa fa-times" (click)="toggleNav()"></i>
     <div class="pad-top pad-bottom">
         <div>
-            <a routerLink="./" class="flex1 pad-left pad-btm  pad-top1">
+            <a routerLink="./" (click)="toggleNav()" class="flex1 pad-left pad-btm  pad-top1">
                 <i class="fa fa-dashboard"></i>
                 <span class="dis">Dashboard</span>
             </a>
@@ -10,19 +10,19 @@
         <div (click)="toggleRegisterPersons()" class="random">
             <a class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-school"></i>
-                <span class="mrglef dis">School Manager</span>
+                <span class="mrglef dis">Registration</span>
                 <i *ngIf="!registerPersonsActive" class="fa fa-angle-right"></i>
                 <i *ngIf="registerPersonsActive" class="fa fa-angle-down"></i>
             </a>
         </div>
         <div *ngIf="registerPersonsActive">
-            <a routerLink="create-profile" class="flex1 pad-left pad-btm pad-top1">
+            <a routerLink="create-profile" (click)="toggleNav()" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Teacher Registration</span>
             </a>
         </div>
         <div *ngIf="registerPersonsActive">
-            <a routerLink="register-student" class="flex1 pad-left pad-btm pad-top1">
+            <a routerLink="register-student" (click)="toggleNav()" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Student Registration</span>
             </a>
@@ -36,13 +36,13 @@
             </a>
         </div>
         <div *ngIf="schoolManagerActive">
-            <a routerLink="teachers" class="flex1 pad-left pad-btm pad-top1">
+            <a routerLink="teachers" (click)="toggleNav()" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Manage Teachers</span>
             </a>
         </div>
         <div *ngIf="schoolManagerActive">
-            <a routerLink="students" class="flex1 pad-left pad-btm pad-top1">
+            <a routerLink="students" (click)="toggleNav()" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Manage Students</span>
             </a>
@@ -56,26 +56,26 @@
             </a>
         </div>
         <div *ngIf="resultsActive">
-            <a routerLink="broadsheet" class="flex1 pad-left pad-btm pad-top1">
+            <a (click)="toggleNav()" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Broadsheet</span>
             </a>
         </div>
         <div *ngIf="resultsActive">
-            <a routerLink="upload" class="flex1 pad-left pad-btm pad-top1">
+            <a routerLink="upload" (click)="toggleNav()" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Upload Score</span>
             </a>
         </div>
         <div *ngIf="resultsActive">
-            <a routerLink="report" class="flex1 pad-left pad-btm pad-top1">
+            <a routerLink="report" (click)="toggleNav()" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">Report Card</span>
             </a>
         </div> 
         
         <div>
-            <a routerLink="adminprofile" class="flex1 pad-left pad-btm pad-top1">
+            <a routerLink="adminprofile" (click)="toggleNav()" class="flex1 pad-left pad-btm pad-top1">
                 <i class="fas fa-stream"></i>
                 <span class="mrglef dis">View Profile</span>
             </a>

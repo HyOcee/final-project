@@ -5,8 +5,8 @@ export interface Indexable {
 export let students = {
     js1: [
         {
-            username: 'Divine', age: 14, bio: 'Lorem is the best dish. You should try it',
-            name: 'Ogbonna Divine',
+            username: 'george', age: 14, bio: 'Lorem is the best dish. You should try it',
+            name: 'George Washington',
             subjectsOfferred: [
                 {
                     subject: 'mathematics', testScore: 10, examScore: 8
@@ -58,7 +58,7 @@ export let students = {
             name: 'Akomolafe Helen',
             subjectsOfferred: [
                 {
-                    subject: 'mathematics', testScore: 10, examScore: 8
+                    subject: 'mathematics', testScore: 10, examScore: 65
                 },
                 {
                     subject: 'civic education', testScore: 0, examScore: 56
@@ -76,13 +76,13 @@ export let students = {
             name: 'Akoriji Arinze',
             subjectsOfferred: [
                 {
-                    subject: 'economics', testScore: 10, examScore: 8
+                    subject: 'economics', testScore: 0, examScore: 8
                 },
                 {
-                    subject: 'commerce', testScore: 0, examScore: 56
+                    subject: 'commerce', testScore: 0, examScore: 5
                 },
                 {
-                    subject: 'biology', testScore: 13, examScore: 44
+                    subject: 'biology', testScore: 3, examScore: 4
                 }
             ]
         },

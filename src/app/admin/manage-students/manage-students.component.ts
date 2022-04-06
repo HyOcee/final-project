@@ -25,7 +25,7 @@ export class ManageStudentsComponent implements OnInit {
     for (let klass in studentsFromSessionStorage){
       for(let student of studentsFromSessionStorage[klass]){
         this.allStudents.push(student)
-        this.total++
+        this.total++;
       }
     }
     console.log(this.allStudents)

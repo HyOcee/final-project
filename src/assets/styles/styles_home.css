@@ -1,10 +1,16 @@
 .logo {
     font-weight: 500;
-    font-size: 32px;
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
-    width: 100px;
+    width: 90px;
+}
+
+.logo span {
+    font-size: 40px;
+    font-style: italic;
 }
 
 .bckimg{
@@ -29,8 +35,12 @@
     color: white;
 }
 
+.clrg{
+    color: #28947b;
+}
+
 header {
-    padding: 5% 7.5%;
+    padding: 2.5% 7.5%;
     position: relative;
     min-height: 100vmin;
     overflow-x: hidden;
@@ -83,7 +93,8 @@ button:disabled {
 }
 
 button:focus:not(:disabled), button:hover:not(:disabled) {
-    outline: 2px solid rgb(0 44 76);
+    outline: 2px solid #155244;
+    /* outline: 2px solid orange; */
 }
 
 input[type='radio'],input[type='checkbox'] {
@@ -93,7 +104,8 @@ input[type='radio'],input[type='checkbox'] {
 input, textarea {
     padding: 10px;
     border-radius: 5px;
-    border: rgb(149 149 149) 1px solid;
+    border: #155244 1px solid;
+    /* border: orange 1px solid; */
 }
 
 input:not(:last-child, [type='radio'], [type='checkbox']), textarea:not(:last-child),
@@ -102,7 +114,12 @@ form button:not(:last-child) {
 }
 
 input:focus, textarea:focus {
-    outline: rgb(0 44 76) 1px solid;
+    outline: #155244 1px solid;
+    /* outline: orange 1px solid; */
+}
+
+input[type='radio'], input[type='checkbox'] {
+    /* color: orange; */
 }
 
 ::placeholder {
